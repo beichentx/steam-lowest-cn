@@ -1,551 +1,44 @@
 {
-  "generated_at": "2026-08-27 当日实时抓取 SteamDB(非历史缓存)",
-  "rate_uah_to_cny": 0.150797,
+  "generated_at": "2026-08-28T11:36:46+00:00",
+  "rate_uah_to_cny": 0.151224,
   "summary": {
-    "super_low": 17,
-    "history_low": 36
+    "super_low": 0,
+    "history_low": 0,
+    "value": 10
   },
   "games": [
     {
-      "appid": 593600,
-      "name_en": "",
-      "name_cn": "方块方舟",
+      "appid": 1174180,
+      "name_en": "Red Dead Redemption 2",
+      "name_cn": "Red Dead Redemption 2",
       "developer": "",
       "publisher": "",
-      "developer_cn": "Snail Games USA（蜗牛游戏美国）",
-      "publisher_cn": "Snail Games USA（蜗牛游戏美国）",
-      "tier": "super_low",
-      "cn_price": 17.0,
-      "ua_price_uah": 102.99,
-      "ua_price_cny": 15.53,
-      "icon_local": "./icons/593600.jpg",
-      "steam_url": "https://store.steampowered.com/app/593600/",
+      "developer_cn": "",
+      "publisher_cn": "",
+      "tier": "value",
+      "cn_price": null,
+      "ua_price_uah": 649.0,
+      "ua_price_cny": 98.14,
+      "icon_local": "./icons/1174180.jpg",
+      "steam_url": "https://store.steampowered.com/app/1174180/",
       "versions": [
         {
-          "packageid": 154697,
-          "name_en": "PixARK",
-          "name_cn": "PixARK",
-          "price_initial": 6800,
-          "price_final": 1700,
-          "discount": 75,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 1551360,
-      "name_en": "",
-      "name_cn": "极限竞速：地平线 5",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Playground Games",
-      "publisher_cn": "Xbox Game Studios",
-      "tier": "super_low",
-      "cn_price": 79.2,
-      "ua_price_uah": 478.99,
-      "ua_price_cny": 72.23,
-      "icon_local": "./icons/1551360.jpg",
-      "steam_url": "https://store.steampowered.com/app/1551360/",
-      "versions": [
-        {
-          "packageid": 547831,
-          "name_en": "极限竞速：地平线 5 标准版",
-          "name_cn": "极限竞速：地平线 5 标准版",
-          "price_initial": 19800,
-          "price_final": 7920,
-          "discount": 60,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 596608,
-          "name_en": "极限竞速：地平线 5 豪华版",
-          "name_cn": "极限竞速：地平线 5 豪华版",
-          "price_initial": 26800,
-          "price_final": 10720,
-          "discount": 60,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 596609,
-          "name_en": "极限竞速：地平线 5 顶级版",
-          "name_cn": "极限竞速：地平线 5 顶级版",
-          "price_initial": 32800,
-          "price_final": 13120,
-          "discount": 60,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 2486820,
-      "name_en": "",
-      "name_cn": "Sonic Racing: CrossWorlds",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Sonic Team",
-      "publisher_cn": "SEGA（世嘉）",
-      "tier": "super_low",
-      "cn_price": 0.0,
-      "ua_price_uah": 0.0,
-      "ua_price_cny": 0.0,
-      "icon_local": "./icons/2486820.jpg",
-      "steam_url": "https://store.steampowered.com/app/2486820/",
-      "versions": [
-        {
-          "packageid": 894965,
-          "name_en": "索尼克赛车 交叉世界",
-          "name_cn": "索尼克赛车 交叉世界",
-          "price_initial": 29800,
-          "price_final": 11920,
-          "discount": 60,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 1270169,
-          "name_en": "索尼克赛车 交叉世界：数字豪华版",
-          "name_cn": "索尼克赛车 交叉世界：数字豪华版",
-          "price_initial": 37800,
-          "price_final": 15120,
-          "discount": 60,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 2440510,
-      "name_en": "",
-      "name_cn": "极限竞速 (Forza Motorsport)",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Turn 10",
-      "publisher_cn": "Xbox Game Studios",
-      "tier": "super_low",
-      "cn_price": 79.2,
-      "ua_price_uah": 678.99,
-      "ua_price_cny": 102.39,
-      "icon_local": "./icons/2440510.jpg",
-      "steam_url": "https://store.steampowered.com/app/2440510/",
-      "versions": [
-        {
-          "packageid": 878254,
-          "name_en": "极限竞速 标准版",
-          "name_cn": "极限竞速 标准版",
-          "price_initial": 19800,
-          "price_final": 7920,
-          "discount": 60,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 919027,
-          "name_en": "极限竞速 豪华版",
-          "name_cn": "极限竞速 豪华版",
-          "price_initial": 26800,
-          "price_final": 10720,
-          "discount": 60,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 919028,
-          "name_en": "极限竞速 尊享版",
-          "name_cn": "极限竞速 尊享版",
-          "price_initial": 32800,
-          "price_final": 13120,
-          "discount": 60,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 2113850,
-      "name_en": "",
-      "name_cn": "Spirit City: Lofi Sessions",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Mooncube Games",
-      "publisher_cn": "Mooncube Games",
-      "tier": "super_low",
-      "cn_price": 16.0,
-      "ua_price_uah": 63.99,
-      "ua_price_cny": 9.65,
-      "icon_local": "./icons/2113850.jpg",
-      "steam_url": "https://store.steampowered.com/app/2113850/",
-      "versions": [
-        {
-          "packageid": 755958,
-          "name_en": "Spirit City: Lofi Sessions",
-          "name_cn": "Spirit City: Lofi Sessions",
-          "price_initial": 4000,
-          "price_final": 1600,
-          "discount": 60,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 3551340,
-      "name_en": "",
-      "name_cn": "足球经理26",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Sports Interactive",
-      "publisher_cn": "SEGA",
-      "tier": "super_low",
-      "cn_price": 107.2,
-      "ua_price_uah": 999.03,
-      "ua_price_cny": 150.65,
-      "icon_local": "./icons/3551340.jpg",
-      "steam_url": "https://store.steampowered.com/app/3551340/",
-      "versions": [
-        {
-          "packageid": 1253262,
-          "name_en": "足球经理26",
-          "name_cn": "足球经理26",
-          "price_initial": 26800,
-          "price_final": 10720,
-          "discount": 60,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 704850,
-      "name_en": "",
-      "name_cn": "Thief Simulator",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Noble Muffins",
-      "publisher_cn": "PlayWay S.A.",
-      "tier": "super_low",
-      "cn_price": 0.0,
-      "ua_price_uah": 0.0,
-      "ua_price_cny": 0.0,
-      "icon_local": "./icons/704850.jpg",
-      "steam_url": "https://store.steampowered.com/app/704850/",
-      "versions": [
-        {
-          "packageid": 203389,
-          "name_en": "Thief Simulator",
-          "name_cn": "Thief Simulator",
-          "price_initial": 7600,
-          "price_final": 684,
-          "discount": 91,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 2058180,
-      "name_en": "",
-      "name_cn": "审判之眼：死神的遗言 Remastered",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "世嘉",
-      "publisher_cn": "世嘉",
-      "tier": "super_low",
-      "cn_price": 47.25,
-      "ua_price_uah": 299.01,
-      "ua_price_cny": 45.09,
-      "icon_local": "./icons/2058180.jpg",
-      "steam_url": "https://store.steampowered.com/app/2058180/",
-      "versions": [
-        {
-          "packageid": 735323,
-          "name_en": "审判之眼：死神的遗言 Remastered",
-          "name_cn": "审判之眼：死神的遗言 Remastered",
-          "price_initial": 18900,
-          "price_final": 4725,
-          "discount": 75,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 2058190,
-      "name_en": "",
-      "name_cn": "审判之逝：湮灭的记忆",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "世嘉",
-      "publisher_cn": "世嘉",
-      "tier": "super_low",
-      "cn_price": 59.4,
-      "ua_price_uah": 449.01,
-      "ua_price_cny": 67.71,
-      "icon_local": "./icons/2058190.jpg",
-      "steam_url": "https://store.steampowered.com/app/2058190/",
-      "versions": [
-        {
-          "packageid": 735326,
-          "name_en": "审判之逝：湮灭的记忆",
-          "name_cn": "审判之逝：湮灭的记忆",
-          "price_initial": 19800,
-          "price_final": 5940,
-          "discount": 70,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 1126320,
-      "name_en": "",
-      "name_cn": "Being a DIK - Season 1",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Dr PinkCake",
-      "publisher_cn": "Dr PinkCake",
-      "tier": "super_low",
-      "cn_price": 0.0,
-      "ua_price_uah": 109.02,
-      "ua_price_cny": 16.44,
-      "icon_local": "./icons/1126320.jpg",
-      "steam_url": "https://store.steampowered.com/app/1126320/",
-      "versions": []
-    },
-    {
-      "appid": 868360,
-      "name_en": "",
-      "name_cn": "Project Hospital",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Oxymoron Games",
-      "publisher_cn": "Oxymoron Games",
-      "tier": "super_low",
-      "cn_price": 27.6,
-      "ua_price_uah": 98.01,
-      "ua_price_cny": 14.78,
-      "icon_local": "./icons/868360.jpg",
-      "steam_url": "https://store.steampowered.com/app/868360/",
-      "versions": [
-        {
-          "packageid": 274016,
-          "name_en": "Project Hospital",
-          "name_cn": "Project Hospital",
-          "price_initial": 9200,
-          "price_final": 2760,
-          "discount": 70,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 2928600,
-      "name_en": "",
-      "name_cn": "鬼灭之刃 火之神血风谭2",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "CyberConnect2",
-      "publisher_cn": "SEGA",
-      "tier": "super_low",
-      "cn_price": 134.0,
-      "ua_price_uah": 1199.03,
-      "ua_price_cny": 180.81,
-      "icon_local": "./icons/2928600.jpg",
-      "steam_url": "https://store.steampowered.com/app/2928600/",
-      "versions": [
-        {
-          "packageid": 1220484,
-          "name_en": "鬼灭之刃 火之神血风谭2",
-          "name_cn": "鬼灭之刃 火之神血风谭2",
-          "price_initial": 26800,
-          "price_final": 13400,
-          "discount": 50,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 1220488,
-          "name_en": "鬼灭之刃 火之神血风谭2　豪华版",
-          "name_cn": "鬼灭之刃 火之神血风谭2　豪华版",
-          "price_initial": 29800,
-          "price_final": 14900,
-          "discount": 50,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 3167920,
-      "name_en": "",
-      "name_cn": "黑心装修队",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Gray2RGB",
-      "publisher_cn": "Simplicity Games, PlayWay S.A.",
-      "tier": "super_low",
-      "cn_price": 49.25,
-      "ua_price_uah": 260.02,
-      "ua_price_cny": 39.21,
-      "icon_local": "./icons/3167920.jpg",
-      "steam_url": "https://store.steampowered.com/app/3167920/",
-      "versions": [
-        {
-          "packageid": 1124105,
-          "name_en": "Low",
-          "name_cn": "Low",
-          "price_initial": 6999,
-          "price_final": 5249,
-          "discount": 25,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 2375550,
-      "name_en": "",
-      "name_cn": "人中之龙7外传 无名之龙",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "RGG Studio",
-      "publisher_cn": "SEGA",
-      "tier": "super_low",
-      "cn_price": 57.25,
-      "ua_price_uah": 424.01,
-      "ua_price_cny": 63.94,
-      "icon_local": "./icons/2375550.jpg",
-      "steam_url": "https://store.steampowered.com/app/2375550/",
-      "versions": [
-        {
-          "packageid": 875004,
-          "name_en": "人中之龙7外传 无名之龙",
-          "name_cn": "人中之龙7外传 无名之龙",
-          "price_initial": 22900,
-          "price_final": 5725,
+          "packageid": 402134,
+          "name_en": "Red Dead Redemption 2",
+          "name_cn": "Red Dead Redemption 2",
+          "price_initial": 27900,
+          "price_final": 6975,
           "discount": 75,
           "discount_end": null,
           "has_price": true
         },
         {
-          "packageid": 875003,
-          "name_en": "人中之龙7外传 无名之龙　豪华版",
-          "name_cn": "人中之龙7外传 无名之龙　豪华版",
-          "price_initial": 24800,
-          "price_final": 6200,
-          "discount": 75,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 1332720,
-      "name_en": "",
-      "name_cn": "Thief Simulator 2",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "CookieDev",
-      "publisher_cn": "PlayWay S.A.",
-      "tier": "super_low",
-      "cn_price": 16.72,
-      "ua_price_uah": 90.98,
-      "ua_price_cny": 13.72,
-      "icon_local": "./icons/1332720.jpg",
-      "steam_url": "https://store.steampowered.com/app/1332720/",
-      "versions": [
-        {
-          "packageid": 465689,
-          "name_en": "Thief Simulator 2",
-          "name_cn": "Thief Simulator 2",
-          "price_initial": 7600,
-          "price_final": 1672,
-          "discount": 78,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 1171690,
-      "name_en": "",
-      "name_cn": "Wayfinder",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Airship Syndicate",
-      "publisher_cn": "Airship Syndicate",
-      "tier": "super_low",
-      "cn_price": 11.04,
-      "ua_price_uah": 61.01,
-      "ua_price_cny": 9.2,
-      "icon_local": "./icons/1171690.jpg",
-      "steam_url": "https://store.steampowered.com/app/1171690/",
-      "versions": [
-        {
-          "packageid": 1080226,
-          "name_en": "Wayfinder：基础创始人礼包",
-          "name_cn": "Wayfinder：基础创始人礼包",
-          "price_initial": 9200,
-          "price_final": 1104,
-          "discount": 88,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 1422130,
-      "name_en": "",
-      "name_cn": "SimRail - The Railway Simulator",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "SimRail S.A.",
-      "publisher_cn": "PlayWay S.A.",
-      "tier": "super_low",
-      "cn_price": 72.48,
-      "ua_price_uah": 392.98,
-      "ua_price_cny": 59.26,
-      "icon_local": "./icons/1422130.jpg",
-      "steam_url": "https://store.steampowered.com/app/1422130/",
-      "versions": [
-        {
-          "packageid": 499356,
-          "name_en": "SimRail",
-          "name_cn": "SimRail",
-          "price_initial": 12900,
-          "price_final": 7353,
-          "discount": 43,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 262060,
-      "name_en": "",
-      "name_cn": "Darkest Dungeon",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Red Hook Studios",
-      "publisher_cn": "Red Hook Studios",
-      "tier": "history_low",
-      "cn_price": 13.2,
-      "ua_price_uah": 74.01,
-      "ua_price_cny": 11.16,
-      "icon_local": "./icons/262060.jpg",
-      "steam_url": "https://store.steampowered.com/app/262060/",
-      "versions": [
-        {
-          "packageid": 33877,
-          "name_en": "Darkest Dungeon",
-          "name_cn": "Darkest Dungeon",
-          "price_initial": 8800,
-          "price_final": 1320,
-          "discount": 85,
+          "packageid": 412454,
+          "name_en": "Red Dead Redemption 2: Ultimate Edition",
+          "name_cn": "Red Dead Redemption 2: Ultimate Edition",
+          "price_initial": 46800,
+          "price_final": 9360,
+          "discount": 80,
           "discount_end": null,
           "has_price": true
         }
@@ -553,16 +46,16 @@
     },
     {
       "appid": 3240220,
-      "name_en": "",
-      "name_cn": "GTA V 增强版",
+      "name_en": "Grand Theft Auto V 增强版",
+      "name_cn": "Grand Theft Auto V 增强版",
       "developer": "",
       "publisher": "",
-      "developer_cn": "Rockstar North",
-      "publisher_cn": "Rockstar Games",
-      "tier": "history_low",
-      "cn_price": 98.56,
-      "ua_price_uah": 879.66,
-      "ua_price_cny": 132.65,
+      "developer_cn": "",
+      "publisher_cn": "",
+      "tier": "value",
+      "cn_price": null,
+      "ua_price_uah": 879.0,
+      "ua_price_cny": 132.93,
       "icon_local": "./icons/3240220.jpg",
       "steam_url": "https://store.steampowered.com/app/3240220/",
       "versions": [
@@ -599,17 +92,212 @@
       ]
     },
     {
+      "appid": 1551360,
+      "name_en": "极限竞速：地平线 5",
+      "name_cn": "极限竞速：地平线 5",
+      "developer": "",
+      "publisher": "",
+      "developer_cn": "",
+      "publisher_cn": "",
+      "tier": "value",
+      "cn_price": null,
+      "ua_price_uah": 479.0,
+      "ua_price_cny": 72.44,
+      "icon_local": "./icons/1551360.jpg",
+      "steam_url": "https://store.steampowered.com/app/1551360/",
+      "versions": [
+        {
+          "packageid": 547831,
+          "name_en": "极限竞速：地平线 5 标准版",
+          "name_cn": "极限竞速：地平线 5 标准版",
+          "price_initial": 19800,
+          "price_final": 7920,
+          "discount": 60,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 596608,
+          "name_en": "极限竞速：地平线 5 豪华版",
+          "name_cn": "极限竞速：地平线 5 豪华版",
+          "price_initial": 26800,
+          "price_final": 10720,
+          "discount": 60,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 596609,
+          "name_en": "极限竞速：地平线 5 顶级版",
+          "name_cn": "极限竞速：地平线 5 顶级版",
+          "price_initial": 32800,
+          "price_final": 13120,
+          "discount": 60,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 990080,
+      "name_en": "霍格沃茨之遗",
+      "name_cn": "霍格沃茨之遗",
+      "developer": "",
+      "publisher": "",
+      "developer_cn": "",
+      "publisher_cn": "",
+      "tier": "value",
+      "cn_price": null,
+      "ua_price_uah": 159.0,
+      "ua_price_cny": 24.04,
+      "icon_local": "./icons/990080.jpg",
+      "steam_url": "https://store.steampowered.com/app/990080/",
+      "versions": [
+        {
+          "packageid": 822363,
+          "name_en": "霍格沃茨之遗",
+          "name_cn": "霍格沃茨之遗",
+          "price_initial": 38400,
+          "price_final": 3840,
+          "discount": 90,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 822364,
+          "name_en": "霍格沃茨之遗：数码豪华版",
+          "name_cn": "霍格沃茨之遗：数码豪华版",
+          "price_initial": 44600,
+          "price_final": 4460,
+          "discount": 90,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 3321460,
+      "name_en": "红色沙漠：增强版",
+      "name_cn": "红色沙漠：增强版",
+      "developer": "",
+      "publisher": "",
+      "developer_cn": "",
+      "publisher_cn": "",
+      "tier": "value",
+      "cn_price": null,
+      "ua_price_uah": 1959.0,
+      "ua_price_cny": 296.25,
+      "icon_local": "./icons/3321460.jpg",
+      "steam_url": "https://store.steampowered.com/app/3321460/",
+      "versions": [
+        {
+          "packageid": 1176092,
+          "name_en": "红色沙漠：增强版",
+          "name_cn": "红色沙漠：增强版",
+          "price_initial": 26800,
+          "price_final": 21440,
+          "discount": 20,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 1418529,
+          "name_en": "红色沙漠：增强豪华版",
+          "name_cn": "红色沙漠：增强豪华版",
+          "price_initial": 32800,
+          "price_final": 26240,
+          "discount": 20,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 2483190,
+      "name_en": "极限竞速：地平线 6",
+      "name_cn": "极限竞速：地平线 6",
+      "developer": "",
+      "publisher": "",
+      "developer_cn": "",
+      "publisher_cn": "",
+      "tier": "value",
+      "cn_price": null,
+      "ua_price_uah": 1954.0,
+      "ua_price_cny": 295.49,
+      "icon_local": null,
+      "steam_url": "https://store.steampowered.com/app/2483190/",
+      "versions": [
+        {
+          "packageid": 950527,
+          "name_en": "极限竞速：地平线 6",
+          "name_cn": "极限竞速：地平线 6",
+          "price_initial": 29800,
+          "price_final": 25330,
+          "discount": 15,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 1463376,
+          "name_en": "极限竞速：地平线 6 豪华版",
+          "name_cn": "极限竞速：地平线 6 豪华版",
+          "price_initial": 39800,
+          "price_final": 33830,
+          "discount": 15,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 1463380,
+          "name_en": "极限竞速：地平线 6 尊享版",
+          "name_cn": "极限竞速：地平线 6 尊享版",
+          "price_initial": 49800,
+          "price_final": 42330,
+          "discount": 15,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 1623730,
+      "name_en": "Palworld / 幻兽帕鲁",
+      "name_cn": "Palworld / 幻兽帕鲁",
+      "developer": "",
+      "publisher": "",
+      "developer_cn": "",
+      "publisher_cn": "",
+      "tier": "value",
+      "cn_price": null,
+      "ua_price_uah": 420.0,
+      "ua_price_cny": 63.51,
+      "icon_local": "./icons/1623730.jpg",
+      "steam_url": "https://store.steampowered.com/app/1623730/",
+      "versions": [
+        {
+          "packageid": 576498,
+          "name_en": "Palworld / 幻兽帕鲁",
+          "name_cn": "Palworld / 幻兽帕鲁",
+          "price_initial": 10800,
+          "price_final": 7560,
+          "discount": 30,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
       "appid": 381210,
-      "name_en": "",
+      "name_en": "黎明杀机",
       "name_cn": "黎明杀机",
       "developer": "",
       "publisher": "",
-      "developer_cn": "Behaviour Interactive Inc.",
-      "publisher_cn": "Behaviour Interactive Inc.",
-      "tier": "history_low",
-      "cn_price": 37.5,
-      "ua_price_uah": 171.02,
-      "ua_price_cny": 25.79,
+      "developer_cn": "",
+      "publisher_cn": "",
+      "tier": "value",
+      "cn_price": null,
+      "ua_price_uah": 171.0,
+      "ua_price_cny": 25.86,
       "icon_local": "./icons/381210.jpg",
       "steam_url": "https://store.steampowered.com/app/381210/",
       "versions": [
@@ -646,185 +334,17 @@
       ]
     },
     {
-      "appid": 255710,
-      "name_en": "",
-      "name_cn": "城市：天际线",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Colossal Order",
-      "publisher_cn": "Paradox Interactive",
-      "tier": "history_low",
-      "cn_price": 41.4,
-      "ua_price_uah": 241.98,
-      "ua_price_cny": 36.49,
-      "icon_local": "./icons/255710.jpg",
-      "steam_url": "https://store.steampowered.com/app/255710/",
-      "versions": [
-        {
-          "packageid": 1045162,
-          "name_en": "版本 1045162",
-          "name_cn": "版本 1045162",
-          "price_initial": 4000,
-          "price_final": 4000,
-          "discount": 0,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 62700,
-          "name_en": "Cities: Skylines",
-          "name_cn": "Cities: Skylines",
-          "price_initial": 13800,
-          "price_final": 4140,
-          "discount": 70,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 1057918,
-          "name_en": "版本 1057918",
-          "name_cn": "版本 1057918",
-          "price_initial": 7200,
-          "price_final": 7200,
-          "discount": 0,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 232993,
-          "name_en": "Cities: Skylines",
-          "name_cn": "Cities: Skylines",
-          "price_initial": 9000,
-          "price_final": 9000,
-          "discount": 0,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 1026306,
-          "name_en": "Cities: Skylines",
-          "name_cn": "Cities: Skylines",
-          "price_initial": 24800,
-          "price_final": 9920,
-          "discount": 60,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 1057920,
-          "name_en": "版本 1057920",
-          "name_cn": "版本 1057920",
-          "price_initial": 11800,
-          "price_final": 11800,
-          "discount": 0,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 601150,
-      "name_en": "",
-      "name_cn": "鬼泣5",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "CAPCOM Co., Ltd.",
-      "publisher_cn": "CAPCOM Co., Ltd.",
-      "tier": "history_low",
-      "cn_price": 37.0,
-      "ua_price_uah": 237.01,
-      "ua_price_cny": 35.74,
-      "icon_local": "./icons/601150.jpg",
-      "steam_url": "https://store.steampowered.com/app/601150/",
-      "versions": [
-        {
-          "packageid": 613144,
-          "name_en": "Devil May Cry 5 + Vergil",
-          "name_cn": "Devil May Cry 5 + Vergil",
-          "price_initial": 14800,
-          "price_final": 3700,
-          "discount": 75,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 613145,
-          "name_en": "Devil May Cry 5 Deluxe + Vergil",
-          "name_cn": "Devil May Cry 5 Deluxe + Vergil",
-          "price_initial": 19800,
-          "price_final": 4950,
-          "discount": 75,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 391220,
-      "name_en": "",
-      "name_cn": "古墓丽影：崛起",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Crystal Dynamics",
-      "publisher_cn": "Crystal Dynamics",
-      "tier": "history_low",
-      "cn_price": 22.05,
-      "ua_price_uah": 82.03,
-      "ua_price_cny": 12.37,
-      "icon_local": "./icons/391220.jpg",
-      "steam_url": "https://store.steampowered.com/app/391220/",
-      "versions": [
-        {
-          "packageid": 90033,
-          "name_en": "Rise of the Tomb Raider: 20 Year Celebration",
-          "name_cn": "Rise of the Tomb Raider: 20 Year Celebration",
-          "price_initial": 14700,
-          "price_final": 2205,
-          "discount": 85,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 233450,
-      "name_en": "",
-      "name_cn": "Prison Architect",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Introversion Software, Double Eleven",
-      "publisher_cn": "Paradox Interactive",
-      "tier": "history_low",
-      "cn_price": 27.6,
-      "ua_price_uah": 145.03,
-      "ua_price_cny": 21.87,
-      "icon_local": "./icons/233450.jpg",
-      "steam_url": "https://store.steampowered.com/app/233450/",
-      "versions": [
-        {
-          "packageid": 26394,
-          "name_en": "Prison Architect",
-          "name_cn": "Prison Architect",
-          "price_initial": 13800,
-          "price_final": 2760,
-          "discount": 80,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
       "appid": 815370,
-      "name_en": "",
+      "name_en": "绿色地狱",
       "name_cn": "绿色地狱",
       "developer": "",
       "publisher": "",
-      "developer_cn": "Creepy Jar",
-      "publisher_cn": "Creepy Jar",
-      "tier": "history_low",
-      "cn_price": 8.7,
-      "ua_price_uah": 36.01,
-      "ua_price_cny": 5.43,
+      "developer_cn": "",
+      "publisher_cn": "",
+      "tier": "value",
+      "cn_price": null,
+      "ua_price_uah": 36.0,
+      "ua_price_cny": 5.44,
       "icon_local": "./icons/815370.jpg",
       "steam_url": "https://store.steampowered.com/app/815370/",
       "versions": [
@@ -851,925 +371,27 @@
       ]
     },
     {
-      "appid": 364360,
-      "name_en": "",
-      "name_cn": "全面战争：战锤",
+      "appid": 1868140,
+      "name_en": "潜水员戴夫 DAVE THE DIVER",
+      "name_cn": "潜水员戴夫 DAVE THE DIVER",
       "developer": "",
       "publisher": "",
-      "developer_cn": "CREATIVE ASSEMBLY",
-      "publisher_cn": "SEGA",
-      "tier": "history_low",
-      "cn_price": 67.0,
-      "ua_price_uah": 237.01,
-      "ua_price_cny": 35.74,
-      "icon_local": "./icons/364360.jpg",
-      "steam_url": "https://store.steampowered.com/app/364360/",
+      "developer_cn": "",
+      "publisher_cn": "",
+      "tier": "value",
+      "cn_price": null,
+      "ua_price_uah": 207.0,
+      "ua_price_cny": 31.3,
+      "icon_local": "./icons/1868140.jpg",
+      "steam_url": "https://store.steampowered.com/app/1868140/",
       "versions": [
         {
-          "packageid": 109561,
-          "name_en": "全面战争：战锤",
-          "name_cn": "全面战争：战锤",
-          "price_initial": 26800,
-          "price_final": 6700,
-          "discount": 75,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 508440,
-      "name_en": "",
-      "name_cn": "Totally Accurate Battle Simulator",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Landfall",
-      "publisher_cn": "Landfall",
-      "tier": "history_low",
-      "cn_price": 23.8,
-      "ua_price_uah": 135.02,
-      "ua_price_cny": 20.36,
-      "icon_local": "./icons/508440.jpg",
-      "steam_url": "https://store.steampowered.com/app/508440/",
-      "versions": [
-        {
-          "packageid": 117560,
-          "name_en": "Totally Accurate Battle Simulator",
-          "name_cn": "Totally Accurate Battle Simulator",
-          "price_initial": 7000,
-          "price_final": 2380,
-          "discount": 66,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 1659040,
-      "name_en": "",
-      "name_cn": "HITMAN World of Assassination",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "IO Interactive A/S",
-      "publisher_cn": "IO Interactive A/S",
-      "tier": "history_low",
-      "cn_price": 95.2,
-      "ua_price_uah": 526.01,
-      "ua_price_cny": 79.32,
-      "icon_local": "./icons/1659040.jpg",
-      "steam_url": "https://store.steampowered.com/app/1659040/",
-      "versions": [
-        {
-          "packageid": 672746,
-          "name_en": "HITMAN World of Assassination",
-          "name_cn": "HITMAN World of Assassination",
-          "price_initial": 23800,
-          "price_final": 9520,
-          "discount": 60,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 963307,
-          "name_en": "HITMAN World of Assassination Part One",
-          "name_cn": "HITMAN World of Assassination Part One",
-          "price_initial": 10800,
-          "price_final": 10800,
-          "discount": 0,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 963308,
-          "name_en": "HITMAN World of Assassination Deluxe Edition",
-          "name_cn": "HITMAN World of Assassination Deluxe Edition",
-          "price_initial": 33600,
-          "price_final": 33600,
-          "discount": 0,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 1030840,
-      "name_en": "",
-      "name_cn": "四海兄弟: 最终版",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Hangar 13",
-      "publisher_cn": "2K",
-      "tier": "history_low",
-      "cn_price": 22.24,
-      "ua_price_uah": 190.99,
-      "ua_price_cny": 28.8,
-      "icon_local": "./icons/1030840.jpg",
-      "steam_url": "https://store.steampowered.com/app/1030840/",
-      "versions": [
-        {
-          "packageid": 342916,
-          "name_en": "Mafia: Definitive Edition",
-          "name_cn": "Mafia: Definitive Edition",
-          "price_initial": 13900,
-          "price_final": 2224,
-          "discount": 84,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 552500,
-      "name_en": "",
-      "name_cn": "Warhammer: Vermintide 2",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Fatshark",
-      "publisher_cn": "Fatshark",
-      "tier": "history_low",
-      "cn_price": 21.6,
-      "ua_price_uah": 75.0,
-      "ua_price_cny": 11.31,
-      "icon_local": "./icons/552500.jpg",
-      "steam_url": "https://store.steampowered.com/app/552500/",
-      "versions": [
-        {
-          "packageid": 259128,
-          "name_en": "Warhammer: Vermintide 2",
-          "name_cn": "Warhammer: Vermintide 2",
-          "price_initial": 10800,
-          "price_final": 2160,
-          "discount": 80,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 280520,
-          "name_en": "Warhammer: Vermintide 2",
-          "name_cn": "Warhammer: Vermintide 2",
-          "price_initial": 9000,
-          "price_final": 9000,
-          "discount": 0,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 359320,
-      "name_en": "",
-      "name_cn": "Elite Dangerous",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Frontier Developments",
-      "publisher_cn": "Frontier Developments",
-      "tier": "history_low",
-      "cn_price": 22.8,
-      "ua_price_uah": 124.01,
-      "ua_price_cny": 18.7,
-      "icon_local": "./icons/359320.jpg",
-      "steam_url": "https://store.steampowered.com/app/359320/",
-      "versions": [
-        {
-          "packageid": 360064,
-          "name_en": "Elite: Dangerous",
-          "name_cn": "Elite: Dangerous",
-          "price_initial": 7600,
-          "price_final": 2280,
-          "discount": 70,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 1017461,
-          "name_en": "Elite Dangerous: Deluxe Edition",
-          "name_cn": "Elite Dangerous: Deluxe Edition",
-          "price_initial": 9200,
-          "price_final": 3680,
-          "discount": 60,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 607080,
-      "name_en": "",
-      "name_cn": "Psychonauts 2",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Double Fine Productions",
-      "publisher_cn": "Double Fine Productions",
-      "tier": "history_low",
-      "cn_price": 25.35,
-      "ua_price_uah": 104.98,
-      "ua_price_cny": 15.83,
-      "icon_local": "./icons/607080.jpg",
-      "steam_url": "https://store.steampowered.com/app/607080/",
-      "versions": [
-        {
-          "packageid": 160659,
-          "name_en": "Psychonauts 2",
-          "name_cn": "Psychonauts 2",
-          "price_initial": 16900,
-          "price_final": 2535,
-          "discount": 85,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 233860,
-      "name_en": "",
-      "name_cn": "Kenshi",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Lo-Fi Games",
-      "publisher_cn": "Lo-Fi Games",
-      "tier": "history_low",
-      "cn_price": 36.0,
-      "ua_price_uah": 151.99,
-      "ua_price_cny": 22.92,
-      "icon_local": "./icons/233860.jpg",
-      "steam_url": "https://store.steampowered.com/app/233860/",
-      "versions": [
-        {
-          "packageid": 593144,
-          "name_en": "Kenshi",
-          "name_cn": "Kenshi",
-          "price_initial": 9000,
-          "price_final": 3600,
-          "discount": 60,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 376985,
-          "name_en": "Kenshi",
-          "name_cn": "Kenshi",
-          "price_initial": 9000,
-          "price_final": 9000,
-          "discount": 0,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 268500,
-      "name_en": "",
-      "name_cn": "XCOM 2",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Firaxis Games",
-      "publisher_cn": "2K",
-      "tier": "history_low",
-      "cn_price": 14.85,
-      "ua_price_uah": 101.0,
-      "ua_price_cny": 15.23,
-      "icon_local": "./icons/268500.jpg",
-      "steam_url": "https://store.steampowered.com/app/268500/",
-      "versions": [
-        {
-          "packageid": 88099,
-          "name_en": "XCOM 2",
-          "name_cn": "XCOM 2",
-          "price_initial": 9900,
-          "price_final": 1485,
-          "discount": 85,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 214950,
-      "name_en": "",
-      "name_cn": "全面战争：罗马2 - 帝皇版",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "CREATIVE ASSEMBLY",
-      "publisher_cn": "SEGA",
-      "tier": "history_low",
-      "cn_price": 53.6,
-      "ua_price_uah": 189.0,
-      "ua_price_cny": 28.5,
-      "icon_local": "./icons/214950.jpg",
-      "steam_url": "https://store.steampowered.com/app/214950/",
-      "versions": [
-        {
-          "packageid": 31282,
-          "name_en": "全面战争：罗马2",
-          "name_cn": "全面战争：罗马2",
-          "price_initial": 26800,
-          "price_final": 5360,
-          "discount": 80,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 750920,
-      "name_en": "",
-      "name_cn": "古墓丽影：暗影 决定版",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Eidos-Montréal, Crystal Dynamics",
-      "publisher_cn": "Crystal Dynamics",
-      "tier": "history_low",
-      "cn_price": 29.4,
-      "ua_price_uah": 111.01,
-      "ua_price_cny": 16.74,
-      "icon_local": "./icons/750920.jpg",
-      "steam_url": "https://store.steampowered.com/app/750920/",
-      "versions": [
-        {
-          "packageid": 1484926,
-          "name_en": "Shadow of the Tomb Raider: Definitive Edition",
-          "name_cn": "Shadow of the Tomb Raider: Definitive Edition",
-          "price_initial": 19600,
-          "price_final": 2940,
-          "discount": 85,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 269210,
-      "name_en": "",
-      "name_cn": "Hero Siege",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Panic Art Studios Ltd",
-      "publisher_cn": "Panic Art Studios Ltd",
-      "tier": "history_low",
-      "cn_price": 10.89,
-      "ua_price_uah": 61.01,
-      "ua_price_cny": 9.2,
-      "icon_local": "./icons/269210.jpg",
-      "steam_url": "https://store.steampowered.com/app/269210/",
-      "versions": [
-        {
-          "packageid": 35704,
-          "name_en": "Hero Siege",
-          "name_cn": "Hero Siege",
-          "price_initial": 3300,
-          "price_final": 1089,
-          "discount": 67,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 47820,
-          "name_en": "Hero Siege",
-          "name_cn": "Hero Siege",
-          "price_initial": 9200,
-          "price_final": 3036,
-          "discount": 67,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 308381,
-          "name_en": "Hero Siege",
-          "name_cn": "Hero Siege",
-          "price_initial": 3700,
-          "price_final": 3700,
-          "discount": 0,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 282140,
-      "name_en": "",
-      "name_cn": "SOMA",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Frictional Games",
-      "publisher_cn": "Frictional Games",
-      "tier": "history_low",
-      "cn_price": 0.0,
-      "ua_price_uah": 0.0,
-      "ua_price_cny": 0.0,
-      "icon_local": "./icons/282140.jpg",
-      "steam_url": "https://store.steampowered.com/app/282140/",
-      "versions": [
-        {
-          "packageid": 38804,
-          "name_en": "SOMA",
-          "name_cn": "SOMA",
-          "price_initial": 10800,
-          "price_final": 2160,
-          "discount": 80,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 1562430,
-      "name_en": "",
-      "name_cn": "DREDGE",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Black Salt Games",
-      "publisher_cn": "Team17",
-      "tier": "history_low",
-      "cn_price": 0.0,
-      "ua_price_uah": 0.0,
-      "ua_price_cny": 0.0,
-      "icon_local": "./icons/1562430.jpg",
-      "steam_url": "https://store.steampowered.com/app/1562430/",
-      "versions": [
-        {
-          "packageid": 1114568,
-          "name_en": "《渔帆暗涌》",
-          "name_cn": "《渔帆暗涌》",
-          "price_initial": 11900,
-          "price_final": 4760,
-          "discount": 60,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 824636,
-          "name_en": "《渔帆暗涌》",
-          "name_cn": "《渔帆暗涌》",
-          "price_initial": 11000,
-          "price_final": 11000,
-          "discount": 0,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 1093759,
-          "name_en": "《渔帆暗涌》",
-          "name_cn": "《渔帆暗涌》",
-          "price_initial": 17900,
-          "price_final": 17900,
-          "discount": 0,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 1190000,
-      "name_en": "",
-      "name_cn": "Car Mechanic Simulator 2021",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Red Dot Games",
-      "publisher_cn": "PlayWay S.A.",
-      "tier": "history_low",
-      "cn_price": 11.96,
-      "ua_price_uah": 65.98,
-      "ua_price_cny": 9.95,
-      "icon_local": "./icons/1190000.jpg",
-      "steam_url": "https://store.steampowered.com/app/1190000/",
-      "versions": [
-        {
-          "packageid": 409562,
-          "name_en": "Car Mechanic Simulator 2021",
-          "name_cn": "Car Mechanic Simulator 2021",
-          "price_initial": 9200,
-          "price_final": 1196,
-          "discount": 87,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 232090,
-      "name_en": "",
-      "name_cn": "Killing Floor 2",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Tripwire Interactive",
-      "publisher_cn": "Tripwire Interactive",
-      "tier": "history_low",
-      "cn_price": 8.8,
-      "ua_price_uah": 37.0,
-      "ua_price_cny": 5.58,
-      "icon_local": "./icons/232090.jpg",
-      "steam_url": "https://store.steampowered.com/app/232090/",
-      "versions": [
-        {
-          "packageid": 64299,
-          "name_en": "Killing Floor 2",
-          "name_cn": "Killing Floor 2",
-          "price_initial": 8800,
-          "price_final": 880,
-          "discount": 90,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 769020,
-          "name_en": "Killing Floor 2 Digital Deluxe Edition",
-          "name_cn": "Killing Floor 2 Digital Deluxe Edition",
-          "price_initial": 11200,
-          "price_final": 1120,
-          "discount": 90,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 285900,
-      "name_en": "",
-      "name_cn": "Gang Beasts",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Boneloaf",
-      "publisher_cn": "Boneloaf",
-      "tier": "history_low",
-      "cn_price": 27.2,
-      "ua_price_uah": 154.98,
-      "ua_price_cny": 23.37,
-      "icon_local": "./icons/285900.jpg",
-      "steam_url": "https://store.steampowered.com/app/285900/",
-      "versions": [
-        {
-          "packageid": 375430,
-          "name_en": "Gang Beasts",
-          "name_cn": "Gang Beasts",
-          "price_initial": 6800,
-          "price_final": 2720,
-          "discount": 60,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 246620,
-      "name_en": "",
-      "name_cn": "Plague Inc: Evolved",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Ndemic Creations",
-      "publisher_cn": "Ndemic Creations",
-      "tier": "history_low",
-      "cn_price": 0.0,
-      "ua_price_uah": 64.99,
-      "ua_price_cny": 9.8,
-      "icon_local": "./icons/246620.jpg",
-      "steam_url": "https://store.steampowered.com/app/246620/",
-      "versions": []
-    },
-    {
-      "appid": 2071280,
-      "name_en": "",
-      "name_cn": "鸦卫奇旅",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Passtech Games",
-      "publisher_cn": "Nacon",
-      "tier": "history_low",
-      "cn_price": 47.5,
-      "ua_price_uah": 229.98,
-      "ua_price_cny": 34.68,
-      "icon_local": "./icons/2071280.jpg",
-      "steam_url": "https://store.steampowered.com/app/2071280/",
-      "versions": [
-        {
-          "packageid": 1098329,
-          "name_en": "Ravenswatch 鸦卫奇旅",
-          "name_cn": "Ravenswatch 鸦卫奇旅",
-          "price_initial": 9500,
-          "price_final": 4750,
-          "discount": 50,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 1629752,
-          "name_en": "Ravenswatch 鸦卫奇旅",
-          "name_cn": "Ravenswatch 鸦卫奇旅",
-          "price_initial": 21000,
-          "price_final": 21000,
-          "discount": 0,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 934700,
-      "name_en": "",
-      "name_cn": "Dead Island 2",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Dambuster Studios",
-      "publisher_cn": "Deep Silver",
-      "tier": "history_low",
-      "cn_price": 37.16,
-      "ua_price_uah": 265.99,
-      "ua_price_cny": 40.11,
-      "icon_local": "./icons/934700.jpg",
-      "steam_url": "https://store.steampowered.com/app/934700/",
-      "versions": [
-        {
-          "packageid": 303210,
-          "name_en": "Dead Island 2",
-          "name_cn": "Dead Island 2",
-          "price_initial": 18580,
-          "price_final": 3716,
-          "discount": 80,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 1004410,
-          "name_en": "Dead Island 2 Ultimate Edition",
-          "name_cn": "Dead Island 2 Ultimate Edition",
-          "price_initial": 25800,
-          "price_final": 5160,
-          "discount": 80,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 1940340,
-      "name_en": "",
-      "name_cn": "Darkest Dungeon II",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Red Hook Studios",
-      "publisher_cn": "Red Hook Studios",
-      "tier": "history_low",
-      "cn_price": 42.78,
-      "ua_price_uah": 247.02,
-      "ua_price_cny": 37.25,
-      "icon_local": "./icons/1940340.jpg",
-      "steam_url": "https://store.steampowered.com/app/1940340/",
-      "versions": [
-        {
-          "packageid": 699070,
-          "name_en": "Darkest Dungeon® II",
-          "name_cn": "Darkest Dungeon® II",
-          "price_initial": 13800,
-          "price_final": 4278,
-          "discount": 69,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 360430,
-      "name_en": "",
-      "name_cn": "Mafia III: Definitive Edition",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Hangar 13",
-      "publisher_cn": "2K",
-      "tier": "history_low",
-      "cn_price": 0.0,
-      "ua_price_uah": 0.0,
-      "ua_price_cny": 0.0,
-      "icon_local": "./icons/360430.jpg",
-      "steam_url": "https://store.steampowered.com/app/360430/",
-      "versions": [
-        {
-          "packageid": 133320,
-          "name_en": "Mafia III: Definitive Edition",
-          "name_cn": "Mafia III: Definitive Edition",
-          "price_initial": 10500,
-          "price_final": 2100,
-          "discount": 80,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 1088850,
-      "name_en": "",
-      "name_cn": "漫威银河护卫队",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Eidos-Montréal",
-      "publisher_cn": "Eidos Interactive Corp.",
-      "tier": "history_low",
-      "cn_price": 44.1,
-      "ua_price_uah": 165.98,
-      "ua_price_cny": 25.03,
-      "icon_local": "./icons/1088850.jpg",
-      "steam_url": "https://store.steampowered.com/app/1088850/",
-      "versions": [
-        {
-          "packageid": 584813,
-          "name_en": "Marvel's Guardians of the Galaxy",
-          "name_cn": "Marvel's Guardians of the Galaxy",
-          "price_initial": 29400,
-          "price_final": 4410,
-          "discount": 85,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 108710,
-      "name_en": "",
-      "name_cn": "Alan Wake",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Remedy Entertainment",
-      "publisher_cn": "Remedy Entertainment",
-      "tier": "history_low",
-      "cn_price": 5.0,
-      "ua_price_uah": 28.98,
-      "ua_price_cny": 4.37,
-      "icon_local": "./icons/108710.jpg",
-      "steam_url": "https://store.steampowered.com/app/108710/",
-      "versions": [
-        {
-          "packageid": 13533,
-          "name_en": "Alan Wake",
-          "name_cn": "Alan Wake",
-          "price_initial": 5000,
-          "price_final": 500,
-          "discount": 90,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 13535,
-          "name_en": "Alan Wake Collector's Edition",
-          "name_cn": "Alan Wake Collector's Edition",
-          "price_initial": 7000,
-          "price_final": 700,
-          "discount": 90,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 15407,
-          "name_en": "Alan Wake Origins Bundle",
-          "name_cn": "Alan Wake Origins Bundle",
-          "price_initial": 9200,
-          "price_final": 920,
-          "discount": 90,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 1237320,
-      "name_en": "",
-      "name_cn": "索尼克 未知边境",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Sonic Team",
-      "publisher_cn": "SEGA",
-      "tier": "history_low",
-      "cn_price": 69.3,
-      "ua_price_uah": 524.02,
-      "ua_price_cny": 79.02,
-      "icon_local": "./icons/1237320.jpg",
-      "steam_url": "https://store.steampowered.com/app/1237320/",
-      "versions": [
-        {
-          "packageid": 754036,
-          "name_en": "索尼克 未知边境",
-          "name_cn": "索尼克 未知边境",
-          "price_initial": 19800,
-          "price_final": 6930,
-          "discount": 65,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 760973,
-          "name_en": "Sonic Frontiers – Digital Deluxe",
-          "name_cn": "Sonic Frontiers – Digital Deluxe",
-          "price_initial": 23800,
-          "price_final": 8330,
-          "discount": 65,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 699130,
-      "name_en": "",
-      "name_cn": "World War Z",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Saber Interactive Inc",
-      "publisher_cn": "Saber Interactive Inc",
-      "tier": "history_low",
-      "cn_price": 62.53,
-      "ua_price_uah": 368.97,
-      "ua_price_cny": 55.64,
-      "icon_local": "./icons/699130.jpg",
-      "steam_url": "https://store.steampowered.com/app/699130/",
-      "versions": [
-        {
-          "packageid": 201132,
-          "name_en": "World War Z: Aftermath",
-          "name_cn": "World War Z: Aftermath",
-          "price_initial": 16900,
-          "price_final": 6253,
-          "discount": 63,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 804566,
-          "name_en": "World War Z",
-          "name_cn": "World War Z",
-          "price_initial": 12900,
-          "price_final": 12900,
-          "discount": 0,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 1119730,
-      "name_en": "",
-      "name_cn": "Ranch Simulator",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Toxic Dog",
-      "publisher_cn": "Excalibur Games",
-      "tier": "history_low",
-      "cn_price": 12.0,
-      "ua_price_uah": 49.01,
-      "ua_price_cny": 7.39,
-      "icon_local": "./icons/1119730.jpg",
-      "steam_url": "https://store.steampowered.com/app/1119730/",
-      "versions": [
-        {
-          "packageid": 379292,
-          "name_en": "Ranch Simulator",
-          "name_cn": "Ranch Simulator",
+          "packageid": 672152,
+          "name_en": "DAVE THE DIVER",
+          "name_cn": "DAVE THE DIVER",
           "price_initial": 8000,
-          "price_final": 1200,
-          "discount": 85,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 368260,
-      "name_en": "",
-      "name_cn": "漫威暗夜之子",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "Firaxis Games",
-      "publisher_cn": "2K",
-      "tier": "history_low",
-      "cn_price": 51.8,
-      "ua_price_uah": 378.99,
-      "ua_price_cny": 57.15,
-      "icon_local": "./icons/368260.jpg",
-      "steam_url": "https://store.steampowered.com/app/368260/",
-      "versions": [
-        {
-          "packageid": 799855,
-          "name_en": "Marvel's Midnight Suns Digital+ Edition",
-          "name_cn": "Marvel's Midnight Suns Digital+ Edition",
-          "price_initial": 25900,
-          "price_final": 5180,
-          "discount": 80,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 799856,
-          "name_en": "Marvel's Midnight Suns",
-          "name_cn": "Marvel's Midnight Suns",
-          "price_initial": 19900,
-          "price_final": 19900,
-          "discount": 0,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 799854,
-          "name_en": "Marvel's Midnight Suns Legendary Edition",
-          "name_cn": "Marvel's Midnight Suns Legendary Edition",
-          "price_initial": 32900,
-          "price_final": 32900,
-          "discount": 0,
+          "price_final": 4000,
+          "discount": 50,
           "discount_end": null,
           "has_price": true
         }
