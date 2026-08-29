@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-28T11:36:46+00:00",
-  "rate_uah_to_cny": 0.151224,
+  "generated_at": "2026-08-29T07:15:09+00:00",
+  "rate_uah_to_cny": 0.1513,
   "summary": {
     "super_low": 0,
     "history_low": 0,
@@ -18,7 +18,7 @@
       "tier": "value",
       "cn_price": null,
       "ua_price_uah": 649.0,
-      "ua_price_cny": 98.14,
+      "ua_price_cny": 98.19,
       "icon_local": "./icons/1174180.jpg",
       "steam_url": "https://store.steampowered.com/app/1174180/",
       "versions": [
@@ -55,7 +55,7 @@
       "tier": "value",
       "cn_price": null,
       "ua_price_uah": 879.0,
-      "ua_price_cny": 132.93,
+      "ua_price_cny": 132.99,
       "icon_local": "./icons/3240220.jpg",
       "steam_url": "https://store.steampowered.com/app/3240220/",
       "versions": [
@@ -102,7 +102,7 @@
       "tier": "value",
       "cn_price": null,
       "ua_price_uah": 479.0,
-      "ua_price_cny": 72.44,
+      "ua_price_cny": 72.47,
       "icon_local": "./icons/1551360.jpg",
       "steam_url": "https://store.steampowered.com/app/1551360/",
       "versions": [
@@ -139,43 +139,6 @@
       ]
     },
     {
-      "appid": 990080,
-      "name_en": "霍格沃茨之遗",
-      "name_cn": "霍格沃茨之遗",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "",
-      "publisher_cn": "",
-      "tier": "value",
-      "cn_price": null,
-      "ua_price_uah": 159.0,
-      "ua_price_cny": 24.04,
-      "icon_local": "./icons/990080.jpg",
-      "steam_url": "https://store.steampowered.com/app/990080/",
-      "versions": [
-        {
-          "packageid": 822363,
-          "name_en": "霍格沃茨之遗",
-          "name_cn": "霍格沃茨之遗",
-          "price_initial": 38400,
-          "price_final": 3840,
-          "discount": 90,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 822364,
-          "name_en": "霍格沃茨之遗：数码豪华版",
-          "name_cn": "霍格沃茨之遗：数码豪华版",
-          "price_initial": 44600,
-          "price_final": 4460,
-          "discount": 90,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
       "appid": 3321460,
       "name_en": "红色沙漠：增强版",
       "name_cn": "红色沙漠：增强版",
@@ -186,7 +149,7 @@
       "tier": "value",
       "cn_price": null,
       "ua_price_uah": 1959.0,
-      "ua_price_cny": 296.25,
+      "ua_price_cny": 296.4,
       "icon_local": "./icons/3321460.jpg",
       "steam_url": "https://store.steampowered.com/app/3321460/",
       "versions": [
@@ -213,6 +176,43 @@
       ]
     },
     {
+      "appid": 990080,
+      "name_en": "霍格沃茨之遗",
+      "name_cn": "霍格沃茨之遗",
+      "developer": "",
+      "publisher": "",
+      "developer_cn": "",
+      "publisher_cn": "",
+      "tier": "value",
+      "cn_price": null,
+      "ua_price_uah": 159.0,
+      "ua_price_cny": 24.06,
+      "icon_local": "./icons/990080.jpg",
+      "steam_url": "https://store.steampowered.com/app/990080/",
+      "versions": [
+        {
+          "packageid": 822363,
+          "name_en": "霍格沃茨之遗",
+          "name_cn": "霍格沃茨之遗",
+          "price_initial": 38400,
+          "price_final": 3840,
+          "discount": 90,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 822364,
+          "name_en": "霍格沃茨之遗：数码豪华版",
+          "name_cn": "霍格沃茨之遗：数码豪华版",
+          "price_initial": 44600,
+          "price_final": 4460,
+          "discount": 90,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
       "appid": 2483190,
       "name_en": "极限竞速：地平线 6",
       "name_cn": "极限竞速：地平线 6",
@@ -223,7 +223,7 @@
       "tier": "value",
       "cn_price": null,
       "ua_price_uah": 1954.0,
-      "ua_price_cny": 295.49,
+      "ua_price_cny": 295.64,
       "icon_local": null,
       "steam_url": "https://store.steampowered.com/app/2483190/",
       "versions": [
@@ -270,7 +270,7 @@
       "tier": "value",
       "cn_price": null,
       "ua_price_uah": 420.0,
-      "ua_price_cny": 63.51,
+      "ua_price_cny": 63.55,
       "icon_local": "./icons/1623730.jpg",
       "steam_url": "https://store.steampowered.com/app/1623730/",
       "versions": [
@@ -287,6 +287,60 @@
       ]
     },
     {
+      "appid": 1331550,
+      "name_en": "Big Ambitions",
+      "name_cn": "Big Ambitions",
+      "developer": "",
+      "publisher": "",
+      "developer_cn": "",
+      "publisher_cn": "",
+      "tier": "value",
+      "cn_price": null,
+      "ua_price_uah": 429.0,
+      "ua_price_cny": 64.91,
+      "icon_local": "./icons/1331550.jpg",
+      "steam_url": "https://store.steampowered.com/app/1331550/",
+      "versions": [
+        {
+          "packageid": 465290,
+          "name_en": "Big Ambitions",
+          "name_cn": "Big Ambitions",
+          "price_initial": 9447,
+          "price_final": 7557,
+          "discount": 20,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 3722330,
+      "name_en": "午夜轮班",
+      "name_cn": "午夜轮班",
+      "developer": "",
+      "publisher": "",
+      "developer_cn": "",
+      "publisher_cn": "",
+      "tier": "value",
+      "cn_price": null,
+      "ua_price_uah": 207.0,
+      "ua_price_cny": 31.32,
+      "icon_local": null,
+      "steam_url": "https://store.steampowered.com/app/3722330/",
+      "versions": [
+        {
+          "packageid": 1310505,
+          "name_en": "Shift At Midnight",
+          "name_cn": "Shift At Midnight",
+          "price_initial": 3800,
+          "price_final": 3420,
+          "discount": 10,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
       "appid": 381210,
       "name_en": "黎明杀机",
       "name_cn": "黎明杀机",
@@ -297,7 +351,7 @@
       "tier": "value",
       "cn_price": null,
       "ua_price_uah": 171.0,
-      "ua_price_cny": 25.86,
+      "ua_price_cny": 25.87,
       "icon_local": "./icons/381210.jpg",
       "steam_url": "https://store.steampowered.com/app/381210/",
       "versions": [
@@ -327,70 +381,6 @@
           "name_cn": "Dead by Daylight",
           "price_initial": 32825,
           "price_final": 16412,
-          "discount": 50,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 815370,
-      "name_en": "绿色地狱",
-      "name_cn": "绿色地狱",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "",
-      "publisher_cn": "",
-      "tier": "value",
-      "cn_price": null,
-      "ua_price_uah": 36.0,
-      "ua_price_cny": 5.44,
-      "icon_local": "./icons/815370.jpg",
-      "steam_url": "https://store.steampowered.com/app/815370/",
-      "versions": [
-        {
-          "packageid": 1120600,
-          "name_en": "Green Hell",
-          "name_cn": "Green Hell",
-          "price_initial": 8700,
-          "price_final": 870,
-          "discount": 90,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 1135912,
-          "name_en": "Green Hell",
-          "name_cn": "Green Hell",
-          "price_initial": 8000,
-          "price_final": 8000,
-          "discount": 0,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 1868140,
-      "name_en": "潜水员戴夫 DAVE THE DIVER",
-      "name_cn": "潜水员戴夫 DAVE THE DIVER",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "",
-      "publisher_cn": "",
-      "tier": "value",
-      "cn_price": null,
-      "ua_price_uah": 207.0,
-      "ua_price_cny": 31.3,
-      "icon_local": "./icons/1868140.jpg",
-      "steam_url": "https://store.steampowered.com/app/1868140/",
-      "versions": [
-        {
-          "packageid": 672152,
-          "name_en": "DAVE THE DIVER",
-          "name_cn": "DAVE THE DIVER",
-          "price_initial": 8000,
-          "price_final": 4000,
           "discount": 50,
           "discount_end": null,
           "has_price": true
