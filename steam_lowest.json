@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-29T07:15:09+00:00",
-  "rate_uah_to_cny": 0.1513,
+  "generated_at": "2026-08-30T05:38:01+00:00",
+  "rate_uah_to_cny": 0.151388,
   "summary": {
     "super_low": 0,
     "history_low": 0,
@@ -18,7 +18,7 @@
       "tier": "value",
       "cn_price": null,
       "ua_price_uah": 649.0,
-      "ua_price_cny": 98.19,
+      "ua_price_cny": 98.25,
       "icon_local": "./icons/1174180.jpg",
       "steam_url": "https://store.steampowered.com/app/1174180/",
       "versions": [
@@ -55,7 +55,7 @@
       "tier": "value",
       "cn_price": null,
       "ua_price_uah": 879.0,
-      "ua_price_cny": 132.99,
+      "ua_price_cny": 133.07,
       "icon_local": "./icons/3240220.jpg",
       "steam_url": "https://store.steampowered.com/app/3240220/",
       "versions": [
@@ -102,7 +102,7 @@
       "tier": "value",
       "cn_price": null,
       "ua_price_uah": 479.0,
-      "ua_price_cny": 72.47,
+      "ua_price_cny": 72.51,
       "icon_local": "./icons/1551360.jpg",
       "steam_url": "https://store.steampowered.com/app/1551360/",
       "versions": [
@@ -149,7 +149,7 @@
       "tier": "value",
       "cn_price": null,
       "ua_price_uah": 1959.0,
-      "ua_price_cny": 296.4,
+      "ua_price_cny": 296.57,
       "icon_local": "./icons/3321460.jpg",
       "steam_url": "https://store.steampowered.com/app/3321460/",
       "versions": [
@@ -176,37 +176,27 @@
       ]
     },
     {
-      "appid": 990080,
-      "name_en": "霍格沃茨之遗",
-      "name_cn": "霍格沃茨之遗",
+      "appid": 1623730,
+      "name_en": "Palworld / 幻兽帕鲁",
+      "name_cn": "Palworld / 幻兽帕鲁",
       "developer": "",
       "publisher": "",
       "developer_cn": "",
       "publisher_cn": "",
       "tier": "value",
       "cn_price": null,
-      "ua_price_uah": 159.0,
-      "ua_price_cny": 24.06,
-      "icon_local": "./icons/990080.jpg",
-      "steam_url": "https://store.steampowered.com/app/990080/",
+      "ua_price_uah": 420.0,
+      "ua_price_cny": 63.58,
+      "icon_local": "./icons/1623730.jpg",
+      "steam_url": "https://store.steampowered.com/app/1623730/",
       "versions": [
         {
-          "packageid": 822363,
-          "name_en": "霍格沃茨之遗",
-          "name_cn": "霍格沃茨之遗",
-          "price_initial": 38400,
-          "price_final": 3840,
-          "discount": 90,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 822364,
-          "name_en": "霍格沃茨之遗：数码豪华版",
-          "name_cn": "霍格沃茨之遗：数码豪华版",
-          "price_initial": 44600,
-          "price_final": 4460,
-          "discount": 90,
+          "packageid": 576498,
+          "name_en": "Palworld / 幻兽帕鲁",
+          "name_cn": "Palworld / 幻兽帕鲁",
+          "price_initial": 10800,
+          "price_final": 7560,
+          "discount": 30,
           "discount_end": null,
           "has_price": true
         }
@@ -223,7 +213,7 @@
       "tier": "value",
       "cn_price": null,
       "ua_price_uah": 1954.0,
-      "ua_price_cny": 295.64,
+      "ua_price_cny": 295.81,
       "icon_local": null,
       "steam_url": "https://store.steampowered.com/app/2483190/",
       "versions": [
@@ -260,27 +250,37 @@
       ]
     },
     {
-      "appid": 1623730,
-      "name_en": "Palworld / 幻兽帕鲁",
-      "name_cn": "Palworld / 幻兽帕鲁",
+      "appid": 990080,
+      "name_en": "霍格沃茨之遗",
+      "name_cn": "霍格沃茨之遗",
       "developer": "",
       "publisher": "",
       "developer_cn": "",
       "publisher_cn": "",
       "tier": "value",
       "cn_price": null,
-      "ua_price_uah": 420.0,
-      "ua_price_cny": 63.55,
-      "icon_local": "./icons/1623730.jpg",
-      "steam_url": "https://store.steampowered.com/app/1623730/",
+      "ua_price_uah": 159.0,
+      "ua_price_cny": 24.07,
+      "icon_local": "./icons/990080.jpg",
+      "steam_url": "https://store.steampowered.com/app/990080/",
       "versions": [
         {
-          "packageid": 576498,
-          "name_en": "Palworld / 幻兽帕鲁",
-          "name_cn": "Palworld / 幻兽帕鲁",
-          "price_initial": 10800,
-          "price_final": 7560,
-          "discount": 30,
+          "packageid": 822363,
+          "name_en": "霍格沃茨之遗",
+          "name_cn": "霍格沃茨之遗",
+          "price_initial": 38400,
+          "price_final": 3840,
+          "discount": 90,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 822364,
+          "name_en": "霍格沃茨之遗：数码豪华版",
+          "name_cn": "霍格沃茨之遗：数码豪华版",
+          "price_initial": 44600,
+          "price_final": 4460,
+          "discount": 90,
           "discount_end": null,
           "has_price": true
         }
@@ -297,7 +297,7 @@
       "tier": "value",
       "cn_price": null,
       "ua_price_uah": 429.0,
-      "ua_price_cny": 64.91,
+      "ua_price_cny": 64.95,
       "icon_local": "./icons/1331550.jpg",
       "steam_url": "https://store.steampowered.com/app/1331550/",
       "versions": [
@@ -324,7 +324,7 @@
       "tier": "value",
       "cn_price": null,
       "ua_price_uah": 207.0,
-      "ua_price_cny": 31.32,
+      "ua_price_cny": 31.34,
       "icon_local": null,
       "steam_url": "https://store.steampowered.com/app/3722330/",
       "versions": [
@@ -351,7 +351,7 @@
       "tier": "value",
       "cn_price": null,
       "ua_price_uah": 171.0,
-      "ua_price_cny": 25.87,
+      "ua_price_cny": 25.89,
       "icon_local": "./icons/381210.jpg",
       "steam_url": "https://store.steampowered.com/app/381210/",
       "versions": [
