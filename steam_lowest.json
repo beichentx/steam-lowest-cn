@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-30T05:38:01+00:00",
-  "rate_uah_to_cny": 0.151388,
+  "generated_at": "2026-08-31T05:53:25+00:00",
+  "rate_uah_to_cny": 0.151207,
   "summary": {
     "super_low": 0,
     "history_low": 0,
@@ -18,7 +18,7 @@
       "tier": "value",
       "cn_price": null,
       "ua_price_uah": 649.0,
-      "ua_price_cny": 98.25,
+      "ua_price_cny": 98.13,
       "icon_local": "./icons/1174180.jpg",
       "steam_url": "https://store.steampowered.com/app/1174180/",
       "versions": [
@@ -45,53 +45,6 @@
       ]
     },
     {
-      "appid": 3240220,
-      "name_en": "Grand Theft Auto V 增强版",
-      "name_cn": "Grand Theft Auto V 增强版",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "",
-      "publisher_cn": "",
-      "tier": "value",
-      "cn_price": null,
-      "ua_price_uah": 879.0,
-      "ua_price_cny": 133.07,
-      "icon_local": "./icons/3240220.jpg",
-      "steam_url": "https://store.steampowered.com/app/3240220/",
-      "versions": [
-        {
-          "packageid": 1229928,
-          "name_en": "版本 1229928",
-          "name_cn": "版本 1229928",
-          "price_initial": 4000,
-          "price_final": 4000,
-          "discount": 0,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 1251933,
-          "name_en": "Grand Theft Auto V Enhanced & Great White Shark Card",
-          "name_cn": "Grand Theft Auto V Enhanced & Great White Shark Card",
-          "price_initial": 22400,
-          "price_final": 9856,
-          "discount": 56,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 1148516,
-          "name_en": "Grand Theft Auto V Enhanced",
-          "name_cn": "Grand Theft Auto V Enhanced",
-          "price_initial": 14900,
-          "price_final": 14900,
-          "discount": 0,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
       "appid": 1551360,
       "name_en": "极限竞速：地平线 5",
       "name_cn": "极限竞速：地平线 5",
@@ -102,7 +55,7 @@
       "tier": "value",
       "cn_price": null,
       "ua_price_uah": 479.0,
-      "ua_price_cny": 72.51,
+      "ua_price_cny": 72.43,
       "icon_local": "./icons/1551360.jpg",
       "steam_url": "https://store.steampowered.com/app/1551360/",
       "versions": [
@@ -139,64 +92,47 @@
       ]
     },
     {
-      "appid": 3321460,
-      "name_en": "红色沙漠：增强版",
-      "name_cn": "红色沙漠：增强版",
+      "appid": 3240220,
+      "name_en": "Grand Theft Auto V 增强版",
+      "name_cn": "Grand Theft Auto V 增强版",
       "developer": "",
       "publisher": "",
       "developer_cn": "",
       "publisher_cn": "",
       "tier": "value",
       "cn_price": null,
-      "ua_price_uah": 1959.0,
-      "ua_price_cny": 296.57,
-      "icon_local": "./icons/3321460.jpg",
-      "steam_url": "https://store.steampowered.com/app/3321460/",
+      "ua_price_uah": 879.0,
+      "ua_price_cny": 132.91,
+      "icon_local": "./icons/3240220.jpg",
+      "steam_url": "https://store.steampowered.com/app/3240220/",
       "versions": [
         {
-          "packageid": 1176092,
-          "name_en": "红色沙漠：增强版",
-          "name_cn": "红色沙漠：增强版",
-          "price_initial": 26800,
-          "price_final": 21440,
-          "discount": 20,
+          "packageid": 1229928,
+          "name_en": "版本 1229928",
+          "name_cn": "版本 1229928",
+          "price_initial": 4000,
+          "price_final": 4000,
+          "discount": 0,
           "discount_end": null,
           "has_price": true
         },
         {
-          "packageid": 1418529,
-          "name_en": "红色沙漠：增强豪华版",
-          "name_cn": "红色沙漠：增强豪华版",
-          "price_initial": 32800,
-          "price_final": 26240,
-          "discount": 20,
+          "packageid": 1251933,
+          "name_en": "Grand Theft Auto V Enhanced & Great White Shark Card",
+          "name_cn": "Grand Theft Auto V Enhanced & Great White Shark Card",
+          "price_initial": 22400,
+          "price_final": 9856,
+          "discount": 56,
           "discount_end": null,
           "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 1623730,
-      "name_en": "Palworld / 幻兽帕鲁",
-      "name_cn": "Palworld / 幻兽帕鲁",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "",
-      "publisher_cn": "",
-      "tier": "value",
-      "cn_price": null,
-      "ua_price_uah": 420.0,
-      "ua_price_cny": 63.58,
-      "icon_local": "./icons/1623730.jpg",
-      "steam_url": "https://store.steampowered.com/app/1623730/",
-      "versions": [
+        },
         {
-          "packageid": 576498,
-          "name_en": "Palworld / 幻兽帕鲁",
-          "name_cn": "Palworld / 幻兽帕鲁",
-          "price_initial": 10800,
-          "price_final": 7560,
-          "discount": 30,
+          "packageid": 1148516,
+          "name_en": "Grand Theft Auto V Enhanced",
+          "name_cn": "Grand Theft Auto V Enhanced",
+          "price_initial": 14900,
+          "price_final": 14900,
+          "discount": 0,
           "discount_end": null,
           "has_price": true
         }
@@ -213,7 +149,7 @@
       "tier": "value",
       "cn_price": null,
       "ua_price_uah": 1954.0,
-      "ua_price_cny": 295.81,
+      "ua_price_cny": 295.46,
       "icon_local": null,
       "steam_url": "https://store.steampowered.com/app/2483190/",
       "versions": [
@@ -250,6 +186,43 @@
       ]
     },
     {
+      "appid": 3321460,
+      "name_en": "红色沙漠：增强版",
+      "name_cn": "红色沙漠：增强版",
+      "developer": "",
+      "publisher": "",
+      "developer_cn": "",
+      "publisher_cn": "",
+      "tier": "value",
+      "cn_price": null,
+      "ua_price_uah": 1959.0,
+      "ua_price_cny": 296.21,
+      "icon_local": "./icons/3321460.jpg",
+      "steam_url": "https://store.steampowered.com/app/3321460/",
+      "versions": [
+        {
+          "packageid": 1176092,
+          "name_en": "红色沙漠：增强版",
+          "name_cn": "红色沙漠：增强版",
+          "price_initial": 26800,
+          "price_final": 21440,
+          "discount": 20,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 1418529,
+          "name_en": "红色沙漠：增强豪华版",
+          "name_cn": "红色沙漠：增强豪华版",
+          "price_initial": 32800,
+          "price_final": 26240,
+          "discount": 20,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
       "appid": 990080,
       "name_en": "霍格沃茨之遗",
       "name_cn": "霍格沃茨之遗",
@@ -260,7 +233,7 @@
       "tier": "value",
       "cn_price": null,
       "ua_price_uah": 159.0,
-      "ua_price_cny": 24.07,
+      "ua_price_cny": 24.04,
       "icon_local": "./icons/990080.jpg",
       "steam_url": "https://store.steampowered.com/app/990080/",
       "versions": [
@@ -287,27 +260,27 @@
       ]
     },
     {
-      "appid": 1331550,
-      "name_en": "Big Ambitions",
-      "name_cn": "Big Ambitions",
+      "appid": 1623730,
+      "name_en": "Palworld / 幻兽帕鲁",
+      "name_cn": "Palworld / 幻兽帕鲁",
       "developer": "",
       "publisher": "",
       "developer_cn": "",
       "publisher_cn": "",
       "tier": "value",
       "cn_price": null,
-      "ua_price_uah": 429.0,
-      "ua_price_cny": 64.95,
-      "icon_local": "./icons/1331550.jpg",
-      "steam_url": "https://store.steampowered.com/app/1331550/",
+      "ua_price_uah": 420.0,
+      "ua_price_cny": 63.51,
+      "icon_local": "./icons/1623730.jpg",
+      "steam_url": "https://store.steampowered.com/app/1623730/",
       "versions": [
         {
-          "packageid": 465290,
-          "name_en": "Big Ambitions",
-          "name_cn": "Big Ambitions",
-          "price_initial": 9447,
-          "price_final": 7557,
-          "discount": 20,
+          "packageid": 576498,
+          "name_en": "Palworld / 幻兽帕鲁",
+          "name_cn": "Palworld / 幻兽帕鲁",
+          "price_initial": 10800,
+          "price_final": 7560,
+          "discount": 30,
           "discount_end": null,
           "has_price": true
         }
@@ -324,7 +297,7 @@
       "tier": "value",
       "cn_price": null,
       "ua_price_uah": 207.0,
-      "ua_price_cny": 31.34,
+      "ua_price_cny": 31.3,
       "icon_local": null,
       "steam_url": "https://store.steampowered.com/app/3722330/",
       "versions": [
@@ -341,47 +314,54 @@
       ]
     },
     {
-      "appid": 381210,
-      "name_en": "黎明杀机",
-      "name_cn": "黎明杀机",
+      "appid": 1331550,
+      "name_en": "Big Ambitions",
+      "name_cn": "Big Ambitions",
       "developer": "",
       "publisher": "",
       "developer_cn": "",
       "publisher_cn": "",
       "tier": "value",
       "cn_price": null,
-      "ua_price_uah": 171.0,
-      "ua_price_cny": 25.89,
-      "icon_local": "./icons/381210.jpg",
-      "steam_url": "https://store.steampowered.com/app/381210/",
+      "ua_price_uah": 429.0,
+      "ua_price_cny": 64.87,
+      "icon_local": "./icons/1331550.jpg",
+      "steam_url": "https://store.steampowered.com/app/1331550/",
       "versions": [
         {
-          "packageid": 71374,
-          "name_en": "Dead by Daylight",
-          "name_cn": "Dead by Daylight",
-          "price_initial": 9375,
-          "price_final": 3750,
-          "discount": 60,
+          "packageid": 465290,
+          "name_en": "Big Ambitions",
+          "name_cn": "Big Ambitions",
+          "price_initial": 9447,
+          "price_final": 7557,
+          "discount": 20,
           "discount_end": null,
           "has_price": true
-        },
+        }
+      ]
+    },
+    {
+      "appid": 870780,
+      "name_en": "控制 - 终极合辑 / Control Ultimate Edition",
+      "name_cn": "控制 - 终极合辑 / Control Ultimate Edition",
+      "developer": "",
+      "publisher": "",
+      "developer_cn": "",
+      "publisher_cn": "",
+      "tier": "value",
+      "cn_price": null,
+      "ua_price_uah": 67.0,
+      "ua_price_cny": 10.13,
+      "icon_local": "./icons/870780.jpg",
+      "steam_url": "https://store.steampowered.com/app/870780/",
+      "versions": [
         {
-          "packageid": 198307,
-          "name_en": "Dead by Daylight",
-          "name_cn": "Dead by Daylight",
-          "price_initial": 9375,
-          "price_final": 9375,
-          "discount": 0,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 1100714,
-          "name_en": "Dead by Daylight",
-          "name_cn": "Dead by Daylight",
-          "price_initial": 32825,
-          "price_final": 16412,
-          "discount": 50,
+          "packageid": 275147,
+          "name_en": "Control Ultimate Edition",
+          "name_cn": "Control Ultimate Edition",
+          "price_initial": 13800,
+          "price_final": 1380,
+          "discount": 90,
           "discount_end": null,
           "has_price": true
         }
