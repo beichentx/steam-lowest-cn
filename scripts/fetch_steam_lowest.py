@@ -30,7 +30,7 @@ Steam 每日史低播报 —— App 集成用独立脚本
 注意：SteamDB 没有官方 API，直连网页会被 Cloudflare 403（实测 urllib/cloudscraper 均失败）。
       work 模式在沙箱环境不可用，需所在网络能过 Cloudflare；否则用 --mode steam 或复用 WorkBuddy 产出。
 """
-import argparse, json, os, re, sys, datetime, urllib.request, urllib.error
+import argparse, json, os, re, sys, time, datetime, urllib.request, urllib.error
 
 # ---------- 配置 ----------
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
@@ -50,14 +50,17 @@ COMPANY_CN = {
     "Sonic Team": "索尼克团队", "CAPCOM Co., Ltd.": "卡普空",
 }
 
-def http_get(url, timeout=30, use_cloud=False):
+def http_get(url, timeout=30, use_cloud=False, headers=None):
     if use_cloud:
         try:
             import cloudscraper
             return cloudscraper.create_scraper().get(url, timeout=timeout).text
         except Exception:
             pass
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "zh-CN,zh;q=0.9"})
+    hdrs = {"User-Agent": UA, "Accept-Language": "zh-CN,zh;q=0.9"}
+    if headers:
+        hdrs.update(headers)
+    req = urllib.request.Request(url, headers=hdrs)
     return urllib.request.urlopen(req, timeout=timeout).read().decode("utf-8", "ignore")
 
 def fetch_rate():
@@ -128,6 +131,7 @@ PKG_TRANSLATE_FULL = [
     ("Collector's Edition", "收藏家版"),
     ("Special Edition", "特别版"),
     ("Season Pass", "季票"),
+    ("4-Pack", "4合1包"),
 ]
 PKG_TRANSLATE_KW = {
     "Deluxe": "豪华", "Gold": "黄金", "Ultimate": "终极", "Complete": "完全",
@@ -149,19 +153,44 @@ def translate_pkg_cn(en):
             s = re.sub(re.escape(kw), cn, s, flags=re.IGNORECASE)
     return s.strip()
 
-def fetch_packages(appid):
-    """拉取该游戏的版本（packages）价格列表。
-    从 appdetails 的 package_groups.subs 解析（option_text 含中文版名+原价+现价）。
-    注：packagedetails 接口已被 Valve 限制（400），不依赖它。
-    返回 [{packageid, name_en, name_cn, price_initial, price_final, discount, discount_end, has_price}]，
-    失败或空则返回 []。价格单位：分。"""
+def _clean_option_name(option, pid):
+    """option_text → (原价分, 版本名)。与 App 端 steam_screen.dart 的
+    _fetchGameVersions 清洗逻辑严格一致（改一处必须改两处）。"""
+    m_orig = re.search(
+        r'<span class="discount_original_price">\s*[¥￥]\s*([\d,]+\.?\d*)\s*</span>', option)
+    initial_cents = 0
+    if m_orig:
+        initial_cents = int(round(float(m_orig.group(1).replace(",", "")) * 100))
+    text = re.sub(r"<[^>]+>", "", option).replace("\u00a0", " ").strip()
+    # 只截断两侧都有空白的连字符价格尾段，避免误伤 4-Pack / Commercial License 等名称内连字符
+    name = re.sub(r"\s+-\s+.*$", "", text).strip()
+    name = re.sub(r"\s*[¥￥]\s*[\d.,]+\s*$", "", name).strip()
+    if not name or re.match(r"^[¥￥₴$€]", name):  # 订阅类(如 GTA+ 月付)名称兜底
+        name = "版本 %d" % pid
+    return initial_cents, name
+
+
+def fetch_app_full(appid):
+    """一次完整的 appdetails 请求（cc=cn&l=schinese）同时给出：
+    detail: {name, developers, publishers, price_overview}
+    versions: package_groups.subs 解析的版本列表。
+    注：filters=basic 已失效（developers/publishers 返回 None），完整响应才是权威；
+    packagedetails 已被 Valve 限制（400），不依赖它。
+    失败或空则返回 {"detail": {}, "versions": []}。价格单位：分。"""
+    empty = {"detail": {}, "versions": []}
     try:
         url = f"https://store.steampowered.com/api/appdetails?appids={appid}&cc=cn&l=schinese"
         j = json.loads(http_get(url, timeout=20))
         node = j.get(str(appid), {})
         if node.get("success") is not True:
-            return []
+            return empty
         data = node.get("data") or {}
+        detail = {
+            "name": data.get("name") or "",
+            "developers": data.get("developers") or [],
+            "publishers": data.get("publishers") or [],
+            "price_overview": data.get("price_overview") or {},
+        }
         groups = data.get("package_groups") or []
         po = data.get("price_overview") or {}
         po_end = po.get("discount_expiration")
@@ -181,18 +210,7 @@ def fetch_packages(appid):
                 if cents is None:
                     continue
                 option = sub.get("option_text") or ""
-                # 原价：discount_original_price span 内容（如 ¥ 198.00）
-                m_orig = re.search(
-                    r'<span class="discount_original_price">\s*[¥￥]\s*([\d,]+\.?\d*)\s*</span>', option)
-                initial_cents = 0
-                if m_orig:
-                    initial_cents = int(round(float(m_orig.group(1).replace(",", "")) * 100))
-                # 名称：去 HTML 标签、去价格尾段（"- ¥xx" 或 "¥xx"）
-                text = re.sub(r"<[^>]+>", "", option).replace("\u00a0", " ").strip()
-                name = re.sub(r"\s*-\s*.*$", "", text).strip()
-                name = re.sub(r"\s*[¥￥]\s*[\d.,]+\s*$", "", name).strip()
-                if not name or re.match(r"^[¥￥₴$€]", name):  # 订阅类(如 GTA+ 月付)名称兜底
-                    name = f"版本 {pid}"
+                initial_cents, name = _clean_option_name(option, pid)
                 final_cents = int(cents)
                 if initial_cents <= 0:
                     initial_cents = final_cents
@@ -210,9 +228,14 @@ def fetch_packages(appid):
                     "has_price": True,
                 })
         versions.sort(key=lambda v: v["price_final"])
-        return versions
+        return {"detail": detail, "versions": versions}
     except Exception:
-        return []
+        return empty
+
+
+def fetch_packages(appid):
+    """兼容旧调用：仅返回版本列表（web 模式用）。"""
+    return fetch_app_full(appid)["versions"]
 
 def gen_markdown(report):
     lines = [f"# Steam 每日史低播报（{report['generated_at']}）", ""]
@@ -229,7 +252,9 @@ def gen_markdown(report):
             comp = g.get("developer_cn") or ""
             if g.get("publisher_cn") and g["publisher_cn"] != comp:
                 comp += f" / {g['publisher_cn']}"
-            lines.append(f"| {icon} | {g['name_cn']} | {comp} | ¥{g['cn_price']} | ¥{g['ua_price_cny']} | [Steam]({g['steam_url']}) |")
+            cn = f"¥{g['cn_price']}" if g.get("cn_price") else "N/A"
+            ua = f"¥{g['ua_price_cny']}" if g.get("ua_price_cny") else "N/A"
+            lines.append(f"| {icon} | {g['name_cn']} | {comp} | {cn} | {ua} | [Steam]({g['steam_url']}) |")
         lines.append("")
     table("超史低游戏（new historical low）", [g for g in report["games"] if g["tier"] == "super_low"])
     table("史低游戏（all-time / historical low）", [g for g in report["games"] if g["tier"] == "history_low"])
@@ -315,53 +340,85 @@ def mode_web(limit, icons_dir):
         cnt[tier] = cnt.get(tier, 0) + 1
     return games, cnt
 
-# ---------------- steam 模式：官方 Store API ----------------
+# ---------------- steam 模式：官方 Store 数据 ----------------
+def fetch_specials_pool(limit):
+    """特惠列表：Store 搜索接口（specials=1，真实折扣全集，分页）。
+    返回 [(appid, rank), ...]。失败回退 featuredcategories.specials
+    （已被 Valve 缩水至 10 条，仅当搜索不可用时兜底）。"""
+    seen, out = set(), []
+    for page in range(20):  # 每页 50，最多 1000 条
+        try:
+            url = ("https://store.steampowered.com/search/results/?query&start=%d&count=50"
+                   "&specials=1&cc=cn&l=schinese&infinite=1" % (page * 50))
+            j = json.loads(http_get(url, timeout=25, headers={
+                "Accept": "application/json",
+                "Referer": "https://store.steampowered.com/search/?specials=1",
+            }))
+            ids = re.findall(r'data-ds-appid="(\d+)"', j.get("results_html") or "")
+            if not ids:
+                break
+            for i in ids:
+                if i not in seen:
+                    seen.add(i)
+                    out.append((int(i), len(out)))
+                    if len(out) >= limit:
+                        return out
+        except Exception:
+            break
+    if out:
+        return out
+    try:
+        data = json.loads(http_get(
+            "https://store.steampowered.com/api/featuredcategories?cc=cn&l=schinese"))
+        items = data.get("specials", {}).get("items", [])[:limit]
+        return [(it.get("id"), i) for i, it in enumerate(items) if it.get("id")]
+    except Exception:
+        return []
+
+
 def mode_steam(limit, icons_dir):
-    print("[steam] 调用 Steam 官方 Store API（无史低标记，按折扣力度分级）...", file=sys.stderr)
-    # 特惠列表
-    url = "https://store.steampowered.com/api/featuredcategories?cc=cn&l=schinese"
-    data = json.loads(http_get(url))
-    specials = data.get("specials", {}).get("items", [])[:limit]
-    games, cnt = [], {"super_low": 0, "history_low": 0}
-    for it in specials:
-        appid = it.get("id")
-        name_cn = it.get("name", "")
-        disc = it.get("discount_pct", 0)
-        final = it.get("final", 0) / 100.0 if it.get("final") else None
-        tier = "super_value" if disc >= 50 else "value"
-        # 用 Steam 官方 API 取权威中文名（覆盖 featuredcategories 的英文默认名）
-        cn_api = cn_name_from_steam(appid)
-        if cn_api:
-            name_cn = cn_api
-        # 乌克兰价
-        ua = None
+    print("[steam] Store 搜索接口特惠列表 + appdetails 完整响应", file=sys.stderr)
+    pool = fetch_specials_pool(limit)
+    print(f"[steam] 特惠池 {len(pool)} 款", file=sys.stderr)
+    games, cnt = [], {"super_low": 0, "history_low": 0, "super_value": 0, "value": 0}
+    for appid, _rank in pool:
+        if not appid:
+            continue
         try:
-            ua_data = json.loads(http_get(f"https://store.steampowered.com/api/appdetails?appids={appid}&cc=ua&l=schinese&filters=price_overview"))
-            node = ua_data.get(str(appid), {}).get("data", {}).get("price_overview", {})
-            if node.get("final"):
-                ua = node["final"] / 100.0
-        except Exception:
-            pass
-        # 开发/发行
-        dev = pub = ""
-        try:
-            d_data = json.loads(http_get(f"https://store.steampowered.com/api/appdetails?appids={appid}&cc=cn&l=schinese&filters=basic"))
-            node = d_data.get(str(appid), {}).get("data", {})
-            dev = node.get("developers", [""])[0]
-            pub = node.get("publishers", [""])[0]
-        except Exception:
-            pass
-        ua_cny = round(ua * rate, 2) if ua else None
-        games.append({
-            "appid": appid, "name_en": name_cn, "name_cn": name_cn,
-            "developer": dev, "publisher": pub, "developer_cn": cn_company(dev),
-            "publisher_cn": cn_company(pub), "tier": tier,
-            "cn_price": final, "ua_price_uah": ua, "ua_price_cny": ua_cny,
-            "icon_local": download_icon(appid, icons_dir),
-            "steam_url": STEAM_STORE.format(appid),
-            "versions": fetch_packages(appid),
-        })
-        cnt[tier] = cnt.get(tier, 0) + 1
+            full = fetch_app_full(appid)
+            detail = full["detail"]
+            dev = (detail.get("developers") or [""])[0]
+            pub = (detail.get("publishers") or [""])[0]
+            # 国服价与折扣：完整响应 price_overview 随 cc=cn&l=schinese 生效
+            po = detail.get("price_overview") or {}
+            cn_final = (po.get("final", 0) / 100.0) if po.get("final") else None
+            disc = po.get("discount_percent") or 0
+            tier = "super_value" if disc >= 50 else "value"
+            name_cn = detail.get("name") or str(appid)
+            # 乌克兰价（独立区服快照；filters=price_overview 仍可用）
+            ua = None
+            try:
+                ua_data = json.loads(http_get(
+                    f"https://store.steampowered.com/api/appdetails?appids={appid}&cc=ua&l=schinese&filters=price_overview",
+                    timeout=20))
+                ua_node = ua_data.get(str(appid), {}).get("data", {}).get("price_overview", {})
+                if ua_node.get("final"):
+                    ua = ua_node["final"] / 100.0
+            except Exception:
+                pass
+            ua_cny = round(ua * rate, 2) if ua else None
+            games.append({
+                "appid": appid, "name_en": name_cn, "name_cn": name_cn,
+                "developer": dev, "publisher": pub, "developer_cn": cn_company(dev),
+                "publisher_cn": cn_company(pub), "tier": tier,
+                "cn_price": cn_final, "ua_price_uah": ua, "ua_price_cny": ua_cny,
+                "icon_local": download_icon(appid, icons_dir),
+                "steam_url": STEAM_STORE.format(appid),
+                "versions": full["versions"],
+            })
+            cnt[tier] = cnt.get(tier, 0) + 1
+        except Exception as e:
+            print(f"[steam] {appid} 失败: {e}", file=sys.stderr)
     return games, cnt
 
 # ---------------- demo 模式 ----------------
@@ -413,10 +470,36 @@ if __name__ == "__main__":
     else:
         games, cnt = mode_demo(icons_dir)
 
+    # 质量门禁（L2：兜底必须真能工作）：数量不足或价格全面丢失时非零退出，
+    # CI 依赖该退出码触发回退，杜绝"静默成功、数据退化"（v1.0.14 的 B-8 教训）。
+    summary = dict(cnt)
+    summary["total"] = len(games)
+    summary["missing_cn_price"] = sum(1 for g in games if not g.get("cn_price"))
+    summary["missing_ua_price"] = sum(1 for g in games if not g.get("ua_price_cny"))
+    summary["with_versions"] = sum(1 for g in games if g.get("versions"))
+    no_price_at_all = [g["appid"] for g in games
+                       if not g.get("ua_price_cny") and not g.get("versions")]
+    print(f"[info] 共 {len(games)} 款 / 国服价缺 {summary['missing_cn_price']} / "
+          f"乌价缺 {summary['missing_ua_price']} / 版本覆盖 {summary['with_versions']}",
+          file=sys.stderr)
+    failed = False
+    if len(games) < 3:
+        print("[gate] 产出数量 <3，判定失败", file=sys.stderr)
+        failed = True
+    if no_price_at_all:
+        print(f"[gate] {len(no_price_at_all)} 款完全无价格(乌价与versions全空): {no_price_at_all[:20]}",
+              file=sys.stderr)
+        failed = True
+    if failed:
+        if args.out == "json":
+            print(json.dumps({"error": "quality_gate", "appids": no_price_at_all[:20]},
+                             ensure_ascii=False))
+        sys.exit(2)
+
     report = {
         "generated_at": datetime.datetime.now().astimezone().isoformat(timespec="seconds"),
         "rate_uah_to_cny": rate,
-        "summary": cnt,
+        "summary": summary,
         "games": games,
     }
     if args.out in ("json", "both"):

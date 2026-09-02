@@ -1,118 +1,49 @@
 {
-  "generated_at": "2026-09-02T04:52:29+00:00",
+  "generated_at": "2026-09-03T07:55:53+08:00",
   "rate_uah_to_cny": 0.151585,
   "summary": {
     "super_low": 0,
     "history_low": 0,
-    "value": 10
+    "super_value": 15,
+    "value": 15,
+    "total": 30,
+    "missing_cn_price": 0,
+    "missing_ua_price": 0,
+    "with_versions": 30
   },
   "games": [
     {
-      "appid": 1326470,
-      "name_en": "Sons Of The Forest",
-      "name_cn": "Sons Of The Forest",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "",
-      "publisher_cn": "",
-      "tier": "value",
-      "cn_price": null,
-      "ua_price_uah": 180.0,
-      "ua_price_cny": 27.29,
-      "icon_local": "./icons/1326470.jpg",
-      "steam_url": "https://store.steampowered.com/app/1326470/",
+      "appid": 1174180,
+      "name_en": "Red Dead Redemption 2",
+      "name_cn": "Red Dead Redemption 2",
+      "developer": "Rockstar Games",
+      "publisher": "Rockstar Games",
+      "developer_cn": "Rockstar",
+      "publisher_cn": "Rockstar",
+      "tier": "super_value",
+      "cn_price": 69.75,
+      "ua_price_uah": 649.0,
+      "ua_price_cny": 98.38,
+      "icon_local": "./icons/1174180.jpg",
+      "steam_url": "https://store.steampowered.com/app/1174180/",
       "versions": [
         {
-          "packageid": 463209,
-          "name_en": "Sons Of The Forest",
-          "name_cn": "Sons Of The Forest",
-          "price_initial": 10800,
-          "price_final": 3240,
-          "discount": 70,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 3321460,
-      "name_en": "红色沙漠：增强版",
-      "name_cn": "红色沙漠：增强版",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "",
-      "publisher_cn": "",
-      "tier": "value",
-      "cn_price": null,
-      "ua_price_uah": 1959.0,
-      "ua_price_cny": 296.96,
-      "icon_local": "./icons/3321460.jpg",
-      "steam_url": "https://store.steampowered.com/app/3321460/",
-      "versions": [
-        {
-          "packageid": 1176092,
-          "name_en": "红色沙漠：增强版",
-          "name_cn": "红色沙漠：增强版",
-          "price_initial": 26800,
-          "price_final": 21440,
-          "discount": 20,
+          "packageid": 402134,
+          "name_en": "Red Dead Redemption 2",
+          "name_cn": "Red Dead Redemption 2",
+          "price_initial": 27900,
+          "price_final": 6975,
+          "discount": 75,
           "discount_end": null,
           "has_price": true
         },
         {
-          "packageid": 1418529,
-          "name_en": "红色沙漠：增强豪华版",
-          "name_cn": "红色沙漠：增强豪华版",
-          "price_initial": 32800,
-          "price_final": 26240,
-          "discount": 20,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 2483190,
-      "name_en": "极限竞速：地平线 6",
-      "name_cn": "极限竞速：地平线 6",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "",
-      "publisher_cn": "",
-      "tier": "value",
-      "cn_price": null,
-      "ua_price_uah": 1954.0,
-      "ua_price_cny": 296.2,
-      "icon_local": null,
-      "steam_url": "https://store.steampowered.com/app/2483190/",
-      "versions": [
-        {
-          "packageid": 950527,
-          "name_en": "极限竞速：地平线 6",
-          "name_cn": "极限竞速：地平线 6",
-          "price_initial": 29800,
-          "price_final": 25330,
-          "discount": 15,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 1463376,
-          "name_en": "极限竞速：地平线 6 豪华版",
-          "name_cn": "极限竞速：地平线 6 豪华版",
-          "price_initial": 39800,
-          "price_final": 33830,
-          "discount": 15,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 1463380,
-          "name_en": "极限竞速：地平线 6 尊享版",
-          "name_cn": "极限竞速：地平线 6 尊享版",
-          "price_initial": 49800,
-          "price_final": 42330,
-          "discount": 15,
+          "packageid": 412454,
+          "name_en": "Red Dead Redemption 2: Ultimate Edition",
+          "name_cn": "Red Dead Redemption 2: Ultimate Edition",
+          "price_initial": 46800,
+          "price_final": 9360,
+          "discount": 80,
           "discount_end": null,
           "has_price": true
         }
@@ -122,12 +53,12 @@
       "appid": 1551360,
       "name_en": "极限竞速：地平线 5",
       "name_cn": "极限竞速：地平线 5",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "",
-      "publisher_cn": "",
-      "tier": "value",
-      "cn_price": null,
+      "developer": "Playground Games",
+      "publisher": "Xbox Game Studios",
+      "developer_cn": "游乐场游戏",
+      "publisher_cn": "Xbox游戏工作室",
+      "tier": "super_value",
+      "cn_price": 79.2,
       "ua_price_uah": 479.0,
       "ua_price_cny": 72.61,
       "icon_local": "./icons/1551360.jpg",
@@ -166,152 +97,15 @@
       ]
     },
     {
-      "appid": 1174180,
-      "name_en": "Red Dead Redemption 2",
-      "name_cn": "Red Dead Redemption 2",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "",
-      "publisher_cn": "",
-      "tier": "value",
-      "cn_price": null,
-      "ua_price_uah": 649.0,
-      "ua_price_cny": 98.38,
-      "icon_local": "./icons/1174180.jpg",
-      "steam_url": "https://store.steampowered.com/app/1174180/",
-      "versions": [
-        {
-          "packageid": 402134,
-          "name_en": "Red Dead Redemption 2",
-          "name_cn": "Red Dead Redemption 2",
-          "price_initial": 27900,
-          "price_final": 6975,
-          "discount": 75,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 412454,
-          "name_en": "Red Dead Redemption 2: Ultimate Edition",
-          "name_cn": "Red Dead Redemption 2: Ultimate Edition",
-          "price_initial": 46800,
-          "price_final": 9360,
-          "discount": 80,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 108600,
-      "name_en": "Project Zomboid",
-      "name_cn": "Project Zomboid",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "",
-      "publisher_cn": "",
-      "tier": "value",
-      "cn_price": null,
-      "ua_price_uah": 355.0,
-      "ua_price_cny": 53.81,
-      "icon_local": "./icons/108600.jpg",
-      "steam_url": "https://store.steampowered.com/app/108600/",
-      "versions": [
-        {
-          "packageid": 34371,
-          "name_en": "Project Zomboid",
-          "name_cn": "Project Zomboid",
-          "price_initial": 9300,
-          "price_final": 6231,
-          "discount": 33,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 44163,
-          "name_en": "Project Zomboid 4",
-          "name_cn": "Project Zomboid 4",
-          "price_initial": 25500,
-          "price_final": 17085,
-          "discount": 33,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 105600,
-      "name_en": "Terraria",
-      "name_cn": "Terraria",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "",
-      "publisher_cn": "",
-      "tier": "value",
-      "cn_price": null,
-      "ua_price_uah": 112.0,
-      "ua_price_cny": 16.98,
-      "icon_local": "./icons/105600.jpg",
-      "steam_url": "https://store.steampowered.com/app/105600/",
-      "versions": [
-        {
-          "packageid": 8183,
-          "name_en": "Terraria",
-          "name_cn": "Terraria",
-          "price_initial": 4200,
-          "price_final": 2100,
-          "discount": 50,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 356628,
-          "name_en": "Terraria",
-          "name_cn": "Terraria",
-          "price_initial": 3700,
-          "price_final": 3700,
-          "discount": 0,
-          "discount_end": null,
-          "has_price": true
-        },
-        {
-          "packageid": 8184,
-          "name_en": "Terraria 4",
-          "name_cn": "Terraria 4",
-          "price_initial": 10800,
-          "price_final": 5400,
-          "discount": 50,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 1488462,
-      "name_en": "007 初露锋芒",
-      "name_cn": "007 初露锋芒",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "",
-      "publisher_cn": "",
-      "tier": "value",
-      "cn_price": null,
-      "ua_price_uah": null,
-      "ua_price_cny": null,
-      "icon_local": null,
-      "steam_url": "https://store.steampowered.com/app/1488462/",
-      "versions": []
-    },
-    {
       "appid": 3240220,
       "name_en": "Grand Theft Auto V 增强版",
       "name_cn": "Grand Theft Auto V 增强版",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "",
-      "publisher_cn": "",
-      "tier": "value",
-      "cn_price": null,
+      "developer": "Rockstar North",
+      "publisher": "Rockstar Games",
+      "developer_cn": "Rockstar North",
+      "publisher_cn": "Rockstar",
+      "tier": "super_value",
+      "cn_price": 98.56,
       "ua_price_uah": 879.0,
       "ua_price_cny": 133.24,
       "icon_local": "./icons/3240220.jpg",
@@ -350,15 +144,227 @@
       ]
     },
     {
+      "appid": 4656000,
+      "name_en": "BOMBANANA!",
+      "name_cn": "BOMBANANA!",
+      "developer": "Lefto Studio",
+      "publisher": "TARK",
+      "developer_cn": "Lefto Studio",
+      "publisher_cn": "TARK",
+      "tier": "value",
+      "cn_price": 17.98,
+      "ua_price_uah": 120.0,
+      "ua_price_cny": 18.19,
+      "icon_local": null,
+      "steam_url": "https://store.steampowered.com/app/4656000/",
+      "versions": [
+        {
+          "packageid": 1621152,
+          "name_en": "BOMBANANA!",
+          "name_cn": "BOMBANANA!",
+          "price_initial": 2900,
+          "price_final": 1798,
+          "discount": 38,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 1326470,
+      "name_en": "Sons Of The Forest",
+      "name_cn": "Sons Of The Forest",
+      "developer": "Endnight Games Ltd",
+      "publisher": "Newnight ",
+      "developer_cn": "Endnight Games Ltd",
+      "publisher_cn": "Newnight",
+      "tier": "super_value",
+      "cn_price": 32.4,
+      "ua_price_uah": 180.0,
+      "ua_price_cny": 27.29,
+      "icon_local": "./icons/1326470.jpg",
+      "steam_url": "https://store.steampowered.com/app/1326470/",
+      "versions": [
+        {
+          "packageid": 463209,
+          "name_en": "Sons Of The Forest",
+          "name_cn": "Sons Of The Forest",
+          "price_initial": 10800,
+          "price_final": 3240,
+          "discount": 70,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 2483190,
+      "name_en": "极限竞速：地平线 6",
+      "name_cn": "极限竞速：地平线 6",
+      "developer": "Playground Games",
+      "publisher": "Xbox Game Studios",
+      "developer_cn": "游乐场游戏",
+      "publisher_cn": "Xbox游戏工作室",
+      "tier": "value",
+      "cn_price": 253.3,
+      "ua_price_uah": 1954.0,
+      "ua_price_cny": 296.2,
+      "icon_local": null,
+      "steam_url": "https://store.steampowered.com/app/2483190/",
+      "versions": [
+        {
+          "packageid": 950527,
+          "name_en": "极限竞速：地平线 6",
+          "name_cn": "极限竞速：地平线 6",
+          "price_initial": 29800,
+          "price_final": 25330,
+          "discount": 15,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 1463376,
+          "name_en": "极限竞速：地平线 6 豪华版",
+          "name_cn": "极限竞速：地平线 6 豪华版",
+          "price_initial": 39800,
+          "price_final": 33830,
+          "discount": 15,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 1463380,
+          "name_en": "极限竞速：地平线 6 尊享版",
+          "name_cn": "极限竞速：地平线 6 尊享版",
+          "price_initial": 49800,
+          "price_final": 42330,
+          "discount": 15,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 990080,
+      "name_en": "霍格沃茨之遗",
+      "name_cn": "霍格沃茨之遗",
+      "developer": "Avalanche Software",
+      "publisher": "Warner Bros. Games",
+      "developer_cn": "Avalanche Software",
+      "publisher_cn": "Warner Bros. Games",
+      "tier": "super_value",
+      "cn_price": 38.4,
+      "ua_price_uah": 159.0,
+      "ua_price_cny": 24.1,
+      "icon_local": "./icons/990080.jpg",
+      "steam_url": "https://store.steampowered.com/app/990080/",
+      "versions": [
+        {
+          "packageid": 822363,
+          "name_en": "霍格沃茨之遗",
+          "name_cn": "霍格沃茨之遗",
+          "price_initial": 38400,
+          "price_final": 3840,
+          "discount": 90,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 822364,
+          "name_en": "霍格沃茨之遗：数码豪华版",
+          "name_cn": "霍格沃茨之遗：数码豪华版",
+          "price_initial": 44600,
+          "price_final": 4460,
+          "discount": 90,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 3321460,
+      "name_en": "红色沙漠：增强版",
+      "name_cn": "红色沙漠：增强版",
+      "developer": "Pearl Abyss",
+      "publisher": "Pearl Abyss",
+      "developer_cn": "Pearl Abyss",
+      "publisher_cn": "Pearl Abyss",
+      "tier": "value",
+      "cn_price": 214.4,
+      "ua_price_uah": 1959.0,
+      "ua_price_cny": 296.96,
+      "icon_local": "./icons/3321460.jpg",
+      "steam_url": "https://store.steampowered.com/app/3321460/",
+      "versions": [
+        {
+          "packageid": 1176092,
+          "name_en": "红色沙漠：增强版",
+          "name_cn": "红色沙漠：增强版",
+          "price_initial": 26800,
+          "price_final": 21440,
+          "discount": 20,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 1418529,
+          "name_en": "红色沙漠：增强豪华版",
+          "name_cn": "红色沙漠：增强豪华版",
+          "price_initial": 32800,
+          "price_final": 26240,
+          "discount": 20,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 108600,
+      "name_en": "Project Zomboid",
+      "name_cn": "Project Zomboid",
+      "developer": "The Indie Stone",
+      "publisher": "The Indie Stone",
+      "developer_cn": "The Indie Stone",
+      "publisher_cn": "The Indie Stone",
+      "tier": "value",
+      "cn_price": 62.31,
+      "ua_price_uah": 355.0,
+      "ua_price_cny": 53.81,
+      "icon_local": "./icons/108600.jpg",
+      "steam_url": "https://store.steampowered.com/app/108600/",
+      "versions": [
+        {
+          "packageid": 34371,
+          "name_en": "Project Zomboid",
+          "name_cn": "Project Zomboid",
+          "price_initial": 9300,
+          "price_final": 6231,
+          "discount": 33,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 44163,
+          "name_en": "Project Zomboid 4-Pack",
+          "name_cn": "Project Zomboid 4-Pack",
+          "price_initial": 25500,
+          "price_final": 17085,
+          "discount": 33,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
       "appid": 1623730,
       "name_en": "Palworld / 幻兽帕鲁",
       "name_cn": "Palworld / 幻兽帕鲁",
-      "developer": "",
-      "publisher": "",
-      "developer_cn": "",
-      "publisher_cn": "",
+      "developer": "Pocketpair",
+      "publisher": "Pocketpair",
+      "developer_cn": "Pocketpair",
+      "publisher_cn": "Pocketpair",
       "tier": "value",
-      "cn_price": null,
+      "cn_price": 75.6,
       "ua_price_uah": 420.0,
       "ua_price_cny": 63.67,
       "icon_local": "./icons/1623730.jpg",
@@ -371,6 +377,666 @@
           "price_initial": 10800,
           "price_final": 7560,
           "discount": 30,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 105600,
+      "name_en": "Terraria",
+      "name_cn": "Terraria",
+      "developer": "Re-Logic",
+      "publisher": "Re-Logic",
+      "developer_cn": "Re-Logic",
+      "publisher_cn": "Re-Logic",
+      "tier": "super_value",
+      "cn_price": 21.0,
+      "ua_price_uah": 112.0,
+      "ua_price_cny": 16.98,
+      "icon_local": "./icons/105600.jpg",
+      "steam_url": "https://store.steampowered.com/app/105600/",
+      "versions": [
+        {
+          "packageid": 8183,
+          "name_en": "Terraria",
+          "name_cn": "Terraria",
+          "price_initial": 4200,
+          "price_final": 2100,
+          "discount": 50,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 356628,
+          "name_en": "Terraria",
+          "name_cn": "Terraria",
+          "price_initial": 3700,
+          "price_final": 3700,
+          "discount": 0,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 8184,
+          "name_en": "Terraria 4-Pack",
+          "name_cn": "Terraria 4-Pack",
+          "price_initial": 10800,
+          "price_final": 5400,
+          "discount": 50,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 3768760,
+      "name_en": "007 初露锋芒",
+      "name_cn": "007 初露锋芒",
+      "developer": "IO Interactive A/S",
+      "publisher": "IO Interactive A/S",
+      "developer_cn": "IO Interactive A/S",
+      "publisher_cn": "IO Interactive A/S",
+      "tier": "value",
+      "cn_price": 238.4,
+      "ua_price_uah": 1279.0,
+      "ua_price_cny": 193.88,
+      "icon_local": null,
+      "steam_url": "https://store.steampowered.com/app/3768760/",
+      "versions": [
+        {
+          "packageid": 1488462,
+          "name_en": "007 初露锋芒",
+          "name_cn": "007 初露锋芒",
+          "price_initial": 29800,
+          "price_final": 23840,
+          "discount": 20,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 1383445,
+          "name_en": "007 初露锋芒",
+          "name_cn": "007 初露锋芒",
+          "price_initial": 33800,
+          "price_final": 33800,
+          "discount": 0,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 648800,
+      "name_en": "Raft",
+      "name_cn": "Raft",
+      "developer": "Redbeet Interactive",
+      "publisher": "Axolot Games",
+      "developer_cn": "Redbeet Interactive",
+      "publisher_cn": "Axolot Games",
+      "tier": "value",
+      "cn_price": 51.59,
+      "ua_price_uah": 288.0,
+      "ua_price_cny": 43.66,
+      "icon_local": "./icons/648800.jpg",
+      "steam_url": "https://store.steampowered.com/app/648800/",
+      "versions": [
+        {
+          "packageid": 182468,
+          "name_en": "Raft",
+          "name_cn": "Raft",
+          "price_initial": 7700,
+          "price_final": 5159,
+          "discount": 33,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 322330,
+      "name_en": "饥荒联机版",
+      "name_cn": "饥荒联机版",
+      "developer": "Klei Entertainment",
+      "publisher": "Klei Entertainment",
+      "developer_cn": "Klei Entertainment",
+      "publisher_cn": "Klei Entertainment",
+      "tier": "super_value",
+      "cn_price": 12.0,
+      "ua_price_uah": 77.0,
+      "ua_price_cny": 11.67,
+      "icon_local": "./icons/322330.jpg",
+      "steam_url": "https://store.steampowered.com/app/322330/",
+      "versions": [
+        {
+          "packageid": 121418,
+          "name_en": "Don't Starve Together",
+          "name_cn": "Don't Starve Together",
+          "price_initial": 2400,
+          "price_final": 1200,
+          "discount": 50,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 68179,
+          "name_en": "饥荒联机版",
+          "name_cn": "饥荒联机版",
+          "price_initial": 4800,
+          "price_final": 1632,
+          "discount": 66,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 198306,
+          "name_en": "饥荒联机版",
+          "name_cn": "饥荒联机版",
+          "price_initial": 4800,
+          "price_final": 4800,
+          "discount": 0,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 2399830,
+      "name_en": "方舟: 生存飞升",
+      "name_cn": "方舟: 生存飞升",
+      "developer": "Studio Wildcard",
+      "publisher": "Studio Wildcard",
+      "developer_cn": "Studio Wildcard",
+      "publisher_cn": "Studio Wildcard",
+      "tier": "super_value",
+      "cn_price": 62.0,
+      "ua_price_uah": 411.0,
+      "ua_price_cny": 62.3,
+      "icon_local": "./icons/2399830.jpg",
+      "steam_url": "https://store.steampowered.com/app/2399830/",
+      "versions": [
+        {
+          "packageid": 863377,
+          "name_en": "ARK: Survival Ascended",
+          "name_cn": "ARK: Survival Ascended",
+          "price_initial": 24800,
+          "price_final": 6200,
+          "discount": 75,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 1364780,
+      "name_en": "Street Fighter 6",
+      "name_cn": "Street Fighter 6",
+      "developer": "CAPCOM Co., Ltd.",
+      "publisher": "CAPCOM Co., Ltd.",
+      "developer_cn": "卡普空",
+      "publisher_cn": "卡普空",
+      "tier": "super_value",
+      "cn_price": 99.0,
+      "ua_price_uah": 599.0,
+      "ua_price_cny": 90.8,
+      "icon_local": "./icons/1364780.jpg",
+      "steam_url": "https://store.steampowered.com/app/1364780/",
+      "versions": [
+        {
+          "packageid": 820656,
+          "name_en": "Street Fighter 6",
+          "name_cn": "Street Fighter 6",
+          "price_initial": 19800,
+          "price_final": 9900,
+          "discount": 50,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 1313468,
+          "name_en": "Street Fighter 6 Years 1-2 Fighters Edition",
+          "name_cn": "Street Fighter 6 Years 1-2 Fighters Edition",
+          "price_initial": 29800,
+          "price_final": 19370,
+          "discount": 35,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 264710,
+      "name_en": "Subnautica - 深海迷航",
+      "name_cn": "Subnautica - 深海迷航",
+      "developer": "Unknown Worlds Entertainment",
+      "publisher": "Unknown Worlds Entertainment",
+      "developer_cn": "Unknown Worlds Entertainment",
+      "publisher_cn": "Unknown Worlds Entertainment",
+      "tier": "super_value",
+      "cn_price": 37.25,
+      "ua_price_uah": 199.0,
+      "ua_price_cny": 30.17,
+      "icon_local": "./icons/264710.jpg",
+      "steam_url": "https://store.steampowered.com/app/264710/",
+      "versions": [
+        {
+          "packageid": 575971,
+          "name_en": "Subnautica",
+          "name_cn": "Subnautica",
+          "price_initial": 14900,
+          "price_final": 3725,
+          "discount": 75,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 594136,
+          "name_en": "Subnautica",
+          "name_cn": "Subnautica",
+          "price_initial": 14900,
+          "price_final": 14900,
+          "discount": 0,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 3722330,
+      "name_en": "午夜轮班",
+      "name_cn": "午夜轮班",
+      "developer": "Bun Muen",
+      "publisher": "Kwalee",
+      "developer_cn": "Bun Muen",
+      "publisher_cn": "Kwalee",
+      "tier": "value",
+      "cn_price": 34.2,
+      "ua_price_uah": 207.0,
+      "ua_price_cny": 31.38,
+      "icon_local": null,
+      "steam_url": "https://store.steampowered.com/app/3722330/",
+      "versions": [
+        {
+          "packageid": 1310505,
+          "name_en": "Shift At Midnight",
+          "name_cn": "Shift At Midnight",
+          "price_initial": 3800,
+          "price_final": 3420,
+          "discount": 10,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 2054970,
+      "name_en": "Dragon's Dogma 2",
+      "name_cn": "Dragon's Dogma 2",
+      "developer": "CAPCOM Co., Ltd.",
+      "publisher": "CAPCOM Co., Ltd.",
+      "developer_cn": "卡普空",
+      "publisher_cn": "卡普空",
+      "tier": "value",
+      "cn_price": 148.5,
+      "ua_price_uah": 1049.0,
+      "ua_price_cny": 159.01,
+      "icon_local": "./icons/2054970.jpg",
+      "steam_url": "https://store.steampowered.com/app/2054970/",
+      "versions": [
+        {
+          "packageid": 734193,
+          "name_en": "Dragon's Dogma 2",
+          "name_cn": "Dragon's Dogma 2",
+          "price_initial": 19800,
+          "price_final": 14850,
+          "discount": 25,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 1686522,
+          "name_en": "Dragon's Dogma 2: Dark Arisen",
+          "name_cn": "Dragon's Dogma 2: Dark Arisen",
+          "price_initial": 24800,
+          "price_final": 24800,
+          "discount": 0,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 962130,
+      "name_en": "Grounded",
+      "name_cn": "Grounded",
+      "developer": "Obsidian Entertainment",
+      "publisher": "Xbox Game Studios",
+      "developer_cn": "Obsidian Entertainment",
+      "publisher_cn": "Xbox游戏工作室",
+      "tier": "super_value",
+      "cn_price": 59.5,
+      "ua_price_uah": 239.0,
+      "ua_price_cny": 36.23,
+      "icon_local": "./icons/962130.jpg",
+      "steam_url": "https://store.steampowered.com/app/962130/",
+      "versions": [
+        {
+          "packageid": 314717,
+          "name_en": "Grounded",
+          "name_cn": "Grounded",
+          "price_initial": 11900,
+          "price_final": 5950,
+          "discount": 50,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 242760,
+      "name_en": "The Forest",
+      "name_cn": "The Forest",
+      "developer": "Endnight Games Ltd",
+      "publisher": "Endnight Games Ltd",
+      "developer_cn": "Endnight Games Ltd",
+      "publisher_cn": "Endnight Games Ltd",
+      "tier": "super_value",
+      "cn_price": 15.4,
+      "ua_price_uah": 61.0,
+      "ua_price_cny": 9.25,
+      "icon_local": "./icons/242760.jpg",
+      "steam_url": "https://store.steampowered.com/app/242760/",
+      "versions": [
+        {
+          "packageid": 28497,
+          "name_en": "The Forest",
+          "name_cn": "The Forest",
+          "price_initial": 7000,
+          "price_final": 1540,
+          "discount": 78,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 297407,
+          "name_en": "The Forest",
+          "name_cn": "The Forest",
+          "price_initial": 7000,
+          "price_final": 7000,
+          "discount": 0,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 251570,
+      "name_en": "7 Days to Die",
+      "name_cn": "7 Days to Die",
+      "developer": "The Fun Pimps",
+      "publisher": "The Fun Pimps Entertainment LLC",
+      "developer_cn": "The Fun Pimps",
+      "publisher_cn": "The Fun Pimps Entertainment LLC",
+      "tier": "value",
+      "cn_price": 83.6,
+      "ua_price_uah": 459.0,
+      "ua_price_cny": 69.58,
+      "icon_local": "./icons/251570.jpg",
+      "steam_url": "https://store.steampowered.com/app/251570/",
+      "versions": [
+        {
+          "packageid": 30741,
+          "name_en": "7 Days to Die",
+          "name_cn": "7 Days to Die",
+          "price_initial": 15200,
+          "price_final": 8360,
+          "discount": 45,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 1331550,
+      "name_en": "Big Ambitions",
+      "name_cn": "Big Ambitions",
+      "developer": "Hovgaard Games",
+      "publisher": "Hovgaard Games",
+      "developer_cn": "Hovgaard Games",
+      "publisher_cn": "Hovgaard Games",
+      "tier": "value",
+      "cn_price": 75.57,
+      "ua_price_uah": 429.0,
+      "ua_price_cny": 65.03,
+      "icon_local": "./icons/1331550.jpg",
+      "steam_url": "https://store.steampowered.com/app/1331550/",
+      "versions": [
+        {
+          "packageid": 465290,
+          "name_en": "Big Ambitions",
+          "name_cn": "Big Ambitions",
+          "price_initial": 9447,
+          "price_final": 7557,
+          "discount": 20,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 1361210,
+      "name_en": "战锤40K：暗潮",
+      "name_cn": "战锤40K：暗潮",
+      "developer": "Fatshark",
+      "publisher": "Fatshark",
+      "developer_cn": "Fatshark",
+      "publisher_cn": "Fatshark",
+      "tier": "super_value",
+      "cn_price": 47.0,
+      "ua_price_uah": 189.0,
+      "ua_price_cny": 28.65,
+      "icon_local": "./icons/1361210.jpg",
+      "steam_url": "https://store.steampowered.com/app/1361210/",
+      "versions": [
+        {
+          "packageid": 807591,
+          "name_en": "Warhammer 40,000: Darktide",
+          "name_cn": "Warhammer 40,000: Darktide",
+          "price_initial": 18800,
+          "price_final": 4700,
+          "discount": 75,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 938125,
+          "name_en": "Warhammer 40,000: Darktide",
+          "name_cn": "Warhammer 40,000: Darktide",
+          "price_initial": 28800,
+          "price_final": 7200,
+          "discount": 75,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 2567870,
+      "name_en": "Chained Together",
+      "name_cn": "Chained Together",
+      "developer": "Anegar Games",
+      "publisher": "Secret Mode",
+      "developer_cn": "Anegar Games",
+      "publisher_cn": "Secret Mode",
+      "tier": "value",
+      "cn_price": 17.6,
+      "ua_price_uah": 99.0,
+      "ua_price_cny": 15.01,
+      "icon_local": "./icons/2567870.jpg",
+      "steam_url": "https://store.steampowered.com/app/2567870/",
+      "versions": [
+        {
+          "packageid": 922271,
+          "name_en": "Chained Together",
+          "name_cn": "Chained Together",
+          "price_initial": 2200,
+          "price_final": 1760,
+          "discount": 20,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 4197610,
+      "name_en": "图书管理员：整理魔法图书馆吧！",
+      "name_cn": "图书管理员：整理魔法图书馆吧！",
+      "developer": "ArtRising",
+      "publisher": "ArtRising",
+      "developer_cn": "ArtRising",
+      "publisher_cn": "ArtRising",
+      "tier": "value",
+      "cn_price": 20.8,
+      "ua_price_uah": 124.0,
+      "ua_price_cny": 18.8,
+      "icon_local": null,
+      "steam_url": "https://store.steampowered.com/app/4197610/",
+      "versions": [
+        {
+          "packageid": 1470117,
+          "name_en": "Librarian: Tidy Up the Arcane Library!",
+          "name_cn": "Librarian: Tidy Up the Arcane Library!",
+          "price_initial": 2600,
+          "price_final": 2080,
+          "discount": 20,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 219990,
+      "name_en": "Grim Dawn",
+      "name_cn": "Grim Dawn",
+      "developer": "Crate Entertainment",
+      "publisher": "Crate Entertainment",
+      "developer_cn": "Crate Entertainment",
+      "publisher_cn": "Crate Entertainment",
+      "tier": "super_value",
+      "cn_price": 13.95,
+      "ua_price_uah": 79.0,
+      "ua_price_cny": 11.98,
+      "icon_local": "./icons/219990.jpg",
+      "steam_url": "https://store.steampowered.com/app/219990/",
+      "versions": [
+        {
+          "packageid": 32132,
+          "name_en": "Grim Dawn",
+          "name_cn": "Grim Dawn",
+          "price_initial": 9300,
+          "price_final": 1395,
+          "discount": 85,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 346110,
+      "name_en": "ARK: Survival Evolved",
+      "name_cn": "ARK: Survival Evolved",
+      "developer": "Studio Wildcard",
+      "publisher": "Studio Wildcard",
+      "developer_cn": "Studio Wildcard",
+      "publisher_cn": "Studio Wildcard",
+      "tier": "value",
+      "cn_price": 38.28,
+      "ua_price_uah": 214.0,
+      "ua_price_cny": 32.44,
+      "icon_local": "./icons/346110.jpg",
+      "steam_url": "https://store.steampowered.com/app/346110/",
+      "versions": [
+        {
+          "packageid": 59321,
+          "name_en": "ARK: Survival Evolved",
+          "name_cn": "ARK: Survival Evolved",
+          "price_initial": 5800,
+          "price_final": 3828,
+          "discount": 34,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 198317,
+          "name_en": "ARK: Survival Evolved",
+          "name_cn": "ARK: Survival Evolved",
+          "price_initial": 19600,
+          "price_final": 19600,
+          "discount": 0,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 815370,
+      "name_en": "绿色地狱",
+      "name_cn": "绿色地狱",
+      "developer": "Creepy Jar",
+      "publisher": "Creepy Jar",
+      "developer_cn": "Creepy Jar",
+      "publisher_cn": "Creepy Jar",
+      "tier": "super_value",
+      "cn_price": 8.7,
+      "ua_price_uah": 36.0,
+      "ua_price_cny": 5.46,
+      "icon_local": "./icons/815370.jpg",
+      "steam_url": "https://store.steampowered.com/app/815370/",
+      "versions": [
+        {
+          "packageid": 1120600,
+          "name_en": "Green Hell",
+          "name_cn": "Green Hell",
+          "price_initial": 8700,
+          "price_final": 870,
+          "discount": 90,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 1135912,
+          "name_en": "Green Hell",
+          "name_cn": "Green Hell",
+          "price_initial": 8000,
+          "price_final": 8000,
+          "discount": 0,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 3905450,
+      "name_en": "WheelMates (双轮成行)",
+      "name_cn": "WheelMates (双轮成行)",
+      "developer": "Firevolt",
+      "publisher": "Firevolt",
+      "developer_cn": "Firevolt",
+      "publisher_cn": "Firevolt",
+      "tier": "value",
+      "cn_price": 69.3,
+      "ua_price_uah": 404.0,
+      "ua_price_cny": 61.24,
+      "icon_local": null,
+      "steam_url": "https://store.steampowered.com/app/3905450/",
+      "versions": [
+        {
+          "packageid": 1372588,
+          "name_en": "WheelMates",
+          "name_cn": "WheelMates",
+          "price_initial": 7700,
+          "price_final": 6930,
+          "discount": 10,
           "discount_end": null,
           "has_price": true
         }

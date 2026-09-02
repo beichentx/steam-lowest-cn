@@ -44,7 +44,33 @@ jobs:
             rm -rf out/icons
             python scripts/fetch_steam_lowest.py --mode steam --out json \
               --json-path out/steam_lowest.json --icons-dir out/icons --limit 100
+            STEAM=$?
+            if [ "$STEAM" != "0" ]; then
+              echo "::error::双通道全部失败 (web=$WEB steam=$STEAM)，数据未产出。脚本内置质量门禁触发（数量<3 或价格全空）——请检查 Valve 接口契约是否再次漂移"
+              exit 1
+            fi
           fi
+
+      - name: 数据质量门禁
+        run: |
+          python - <<'PY'
+          import json, sys
+          d = json.load(open('out/steam_lowest.json'))
+          games = d.get('games', [])
+          errors = []
+          if len(games) < 3:
+              errors.append(f"游戏数 {len(games)} < 3")
+          no_price = [g['appid'] for g in games
+                      if not g.get('ua_price_cny') and not (g.get('versions') or [])]
+          if no_price:
+              errors.append(f"{len(no_price)} 款完全无价格: {no_price[:10]}")
+          if errors:
+              print("::error::质量门禁未通过: " + "; ".join(errors))
+              sys.exit(1)
+          withv = sum(1 for g in games if g.get('versions'))
+          ncn = sum(1 for g in games if g.get('cn_price'))
+          print(f"质量门禁通过: {len(games)} 款 / 国服价 {ncn} / 版本覆盖 {withv}")
+          PY
 
       - name: 清理未被当前数据引用的旧图标
         run: |
