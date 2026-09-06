@@ -378,7 +378,12 @@ def fetch_cheapshark_pool(max_games=400):
                         n_fail += 1
                 else:
                     time.sleep(2)
+        if not isinstance(deals, list):
+            # Cloudflare/限流错误体可能是合法 JSON 字典——形状不对按失败处理
+            deals = None
         for d in deals or []:
+            if not isinstance(d, dict):
+                continue
             appid = d.get("steamAppID")
             if appid and appid not in out:
                 out[appid] = d
