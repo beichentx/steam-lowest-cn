@@ -345,29 +345,36 @@ def mode_web(limit, icons_dir):
     return games, cnt
 
 # ---------------- CheapShark：真·史低与热销度 ----------------
+# CheapShark 2026-09 起要求可识别的应用 UA（浏览器/generic UA 直接拒绝）
+UA_CS = "beichen-steam-lowest-cn/1.0 (github.com/beichentx/steam-lowest-cn)"
+
+
 def _cs_get(url):
-    """CheapShark 专用取数：cloudscraper 优先（CI 数据中心 IP 会被 Cloudflare
-    挑战，返回体是 JSON 字典而非列表），失败退 plain urllib。返回解析对象或 None。"""
-    last_txt = None
-    for mode in ("cloud", "plain"):
+    """CheapShark 专用取数：可识别应用 UA 直连优先（按官方要求），
+    失败退 cloudscraper（过 Cloudflare）再退 plain urllib。返回解析对象或 None。"""
+    last_err = None
+    attempts = [
+        ("plain+csUA", lambda: http_get(url, timeout=30, headers={
+            "Accept": "application/json", "User-Agent": UA_CS})),
+        ("cloudscraper", lambda: __import__("cloudscraper").create_scraper(
+            browser={"browser": "chrome", "platform": "windows", "mobile": False})
+            .get(url, timeout=30, headers={
+                "Accept": "application/json", "User-Agent": UA_CS}).text),
+        ("plain+browserUA", lambda: http_get(url, timeout=30, headers={
+            "Accept": "application/json"})),
+    ]
+    for name, fn in attempts:
         try:
-            if mode == "cloud":
-                import cloudscraper
-                scraper = cloudscraper.create_scraper(
-                    browser={"browser": "chrome", "platform": "windows", "mobile": False})
-                txt = scraper.get(url, timeout=30,
-                                  headers={"Accept": "application/json"}).text
-            else:
-                txt = http_get(url, timeout=30, headers={"Accept": "application/json"})
-            obj = json.loads(txt)
-            # 响应体诊断：非列表（错误字典）时打印前 200 字符，便于排查契约漂移
+            obj = json.loads(fn())
             if not isinstance(obj, list):
-                print(f"[cheapshark] 非列表响应: {str(obj)[:200]}", file=sys.stderr)
+                # games?id 端点正常返回字典；deals 端点字典=错误体（打印诊断）
+                if "error" in obj or "info" not in obj:
+                    print(f"[cheapshark] {name} 非列表响应: {str(obj)[:160]}", file=sys.stderr)
                 return obj
             return obj
         except Exception as e:
-            last_txt = f"{type(e).__name__}: {e}"
-    print(f"[cheapshark] 请求失败: {last_txt}", file=sys.stderr)
+            last_err = f"{name}: {type(e).__name__}: {e}"
+    print(f"[cheapshark] 请求失败 {last_err}", file=sys.stderr)
     return None
 
 
