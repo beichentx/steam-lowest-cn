@@ -345,43 +345,49 @@ def mode_web(limit, icons_dir):
     return games, cnt
 
 # ---------------- CheapShark：真·史低与热销度 ----------------
+def _cs_get(url):
+    """CheapShark 专用取数：cloudscraper 优先（CI 数据中心 IP 会被 Cloudflare
+    挑战，返回体是 JSON 字典而非列表），失败退 plain urllib。返回解析对象或 None。"""
+    last_txt = None
+    for mode in ("cloud", "plain"):
+        try:
+            if mode == "cloud":
+                import cloudscraper
+                scraper = cloudscraper.create_scraper(
+                    browser={"browser": "chrome", "platform": "windows", "mobile": False})
+                txt = scraper.get(url, timeout=30,
+                                  headers={"Accept": "application/json"}).text
+            else:
+                txt = http_get(url, timeout=30, headers={"Accept": "application/json"})
+            obj = json.loads(txt)
+            # 响应体诊断：非列表（错误字典）时打印前 200 字符，便于排查契约漂移
+            if not isinstance(obj, list):
+                print(f"[cheapshark] 非列表响应: {str(obj)[:200]}", file=sys.stderr)
+                return obj
+            return obj
+        except Exception as e:
+            last_txt = f"{type(e).__name__}: {e}"
+    print(f"[cheapshark] 请求失败: {last_txt}", file=sys.stderr)
+    return None
+
+
 def fetch_cheapshark_pool(max_games=400):
     """CheapShark Steam 区在促 deal → {steamAppID: deal}。
     deal 含 steamRatingCount（评价数=热销度）、gameID（查历史最低用）。
     注意（2026-09 实测）：
     ① 该 API 的 page 分页与 steamRatingCount 过滤参数已失效（翻页返回相同数据），
        但不同 sortBy 返回不同集合——用 6 种排序各取 60 条合并去重（~340 款）；
-    ② cheapshark.com 在 Cloudflare 后面，GitHub Actions 数据中心 IP 会被挑战
-       （本地可直连、CI 拿到 403/空）——plain 失败自动切 cloudscraper 重试。"""
+    ② CI 数据中心 IP 直连会被 Cloudflare 挑战（返回 JSON 错误字典），
+       cloudscraper 伪装浏览器优先，plain urllib 兜底。"""
     sorts = ["Reviews", "Deal%20Rating", "Savings", "Metacritic", "Price", "recent"]
     out = {}
-    n_fail = 0
     for s in sorts:
-        deals = None
-        for attempt in (1, 2):
-            url = (f"https://www.cheapshark.com/api/1.0/deals?storeID=1&onSale=1"
-                   f"&sortBy={s}&pageSize=60")
-            try:
-                txt = http_get(url, timeout=30, headers={"Accept": "application/json"})
-                deals = json.loads(txt)
-                break
-            except Exception:
-                if attempt == 2:
-                    try:  # CI 数据中心 IP 被 Cloudflare 挑战 → cloudscraper 兜底
-                        import cloudscraper
-                        txt = cloudscraper.create_scraper().get(
-                            url, timeout=30,
-                            headers={"Accept": "application/json"}).text
-                        deals = json.loads(txt)
-                    except Exception as e2:
-                        print(f"[cheapshark] sortBy={s} 失败({e2})", file=sys.stderr)
-                        n_fail += 1
-                else:
-                    time.sleep(2)
+        url = (f"https://www.cheapshark.com/api/1.0/deals?storeID=1&onSale=1"
+               f"&sortBy={s}&pageSize=60")
+        deals = _cs_get(url)
         if not isinstance(deals, list):
-            # Cloudflare/限流错误体可能是合法 JSON 字典——形状不对按失败处理
-            deals = None
-        for d in deals or []:
+            continue
+        for d in deals:
             if not isinstance(d, dict):
                 continue
             appid = d.get("steamAppID")
@@ -397,21 +403,15 @@ def fetch_cheapshark_pool(max_games=400):
 
 def fetch_usd_lowest(game_id):
     """CheapShark games?id → cheapestPriceEver.price（USD，真·历史最低价）。"""
-    url = f"https://www.cheapshark.com/api/1.0/games?id={game_id}"
-    for use_cloud in (False, True):
-        try:
-            if use_cloud:
-                import cloudscraper
-                txt = cloudscraper.create_scraper().get(url, timeout=25).text
-            else:
-                txt = http_get(url, timeout=20, headers={"Accept": "application/json"})
-            g = json.loads(txt)
-            cpe = g.get("cheapestPriceEver") or {}
-            p = cpe.get("price")
-            return float(p) if p else None
-        except Exception:
-            continue
-    return None
+    g = _cs_get(f"https://www.cheapshark.com/api/1.0/games?id={game_id}")
+    if not isinstance(g, dict):
+        return None
+    cpe = g.get("cheapestPriceEver") or {}
+    p = cpe.get("price")
+    try:
+        return float(p) if p else None
+    except (TypeError, ValueError):
+        return None
 
 
 # ---------------- steam 模式：官方 Store 数据 ----------------
