@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T00:39:45+00:00",
+  "generated_at": "2026-09-06T00:49:24+00:00",
   "rate_uah_to_cny": 0.150875,
   "summary": {
     "super_low": 0,
@@ -1347,36 +1347,6 @@
           "price_initial": 12800,
           "price_final": 6400,
           "discount": 50,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 1621690,
-      "name_en": "护核纪元",
-      "name_cn": "护核纪元",
-      "developer": "Pugstorm",
-      "publisher": "Fireshine Games",
-      "developer_cn": "Pugstorm",
-      "publisher_cn": "Fireshine Games",
-      "tier": "value",
-      "cn_price": 45.6,
-      "ua_price_uah": 249.0,
-      "ua_price_cny": 37.57,
-      "rating_count": 0,
-      "usd_price": null,
-      "usd_lowest": null,
-      "icon_local": "./icons/1621690.jpg",
-      "steam_url": "https://store.steampowered.com/app/1621690/",
-      "versions": [
-        {
-          "packageid": 575770,
-          "name_en": "Core Keeper",
-          "name_cn": "Core Keeper",
-          "price_initial": 7600,
-          "price_final": 4560,
-          "discount": 40,
           "discount_end": null,
           "has_price": true
         }
@@ -2797,6 +2767,36 @@
           "price_initial": 38800,
           "price_final": 17460,
           "discount": 55,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 4376980,
+      "name_en": "Age of Empires II: DE - The Viking Sagas",
+      "name_cn": "Age of Empires II: DE - The Viking Sagas",
+      "developer": "World's Edge",
+      "publisher": "",
+      "developer_cn": "World's Edge",
+      "publisher_cn": "",
+      "tier": "value",
+      "cn_price": 83.3,
+      "ua_price_uah": 594.0,
+      "ua_price_cny": 89.62,
+      "rating_count": 0,
+      "usd_price": null,
+      "usd_lowest": null,
+      "icon_local": null,
+      "steam_url": "https://store.steampowered.com/app/4376980/",
+      "versions": [
+        {
+          "packageid": 1529207,
+          "name_en": "Age of Empires II: DE",
+          "name_cn": "Age of Empires II: DE",
+          "price_initial": 9800,
+          "price_final": 8330,
+          "discount": 15,
           "discount_end": null,
           "has_price": true
         }
