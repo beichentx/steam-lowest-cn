@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-06T00:25:03+00:00",
+  "generated_at": "2026-09-06T00:39:45+00:00",
   "rate_uah_to_cny": 0.150875,
   "summary": {
     "super_low": 0,
     "history_low": 0,
-    "super_value": 57,
-    "value": 43,
+    "super_value": 56,
+    "value": 44,
     "total": 100,
     "missing_cn_price": 0,
     "missing_ua_price": 1,
@@ -2163,36 +2163,6 @@
       ]
     },
     {
-      "appid": 2881150,
-      "name_en": "ARK: Bob's Tall Tales",
-      "name_cn": "ARK: Bob's Tall Tales",
-      "developer": "Studio Wildcard",
-      "publisher": "Studio Wildcard",
-      "developer_cn": "Studio Wildcard",
-      "publisher_cn": "Studio Wildcard",
-      "tier": "super_value",
-      "cn_price": 71.28,
-      "ua_price_uah": 377.0,
-      "ua_price_cny": 56.88,
-      "rating_count": 0,
-      "usd_price": null,
-      "usd_lowest": null,
-      "icon_local": "./icons/2881150.jpg",
-      "steam_url": "https://store.steampowered.com/app/2881150/",
-      "versions": [
-        {
-          "packageid": 1027299,
-          "name_en": "ARK: Bob's Tall Tales",
-          "name_cn": "ARK: Bob's Tall Tales",
-          "price_initial": 21600,
-          "price_final": 7128,
-          "discount": 67,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
       "appid": 1203620,
       "name_en": "雾锁王国 (Enshrouded)",
       "name_cn": "雾锁王国 (Enshrouded)",
@@ -2227,6 +2197,36 @@
           "price_initial": 9800,
           "price_final": 9800,
           "discount": 0,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 10090,
+      "name_en": "Call of Duty: World at War",
+      "name_cn": "Call of Duty: World at War",
+      "developer": "Treyarch",
+      "publisher": "Activision",
+      "developer_cn": "Treyarch",
+      "publisher_cn": "Activision",
+      "tier": "value",
+      "cn_price": 73.5,
+      "ua_price_uah": 636.0,
+      "ua_price_cny": 95.96,
+      "rating_count": 0,
+      "usd_price": null,
+      "usd_lowest": null,
+      "icon_local": "./icons/10090.jpg",
+      "steam_url": "https://store.steampowered.com/app/10090/",
+      "versions": [
+        {
+          "packageid": 1155,
+          "name_en": "Call of Duty: World at War",
+          "name_cn": "Call of Duty: World at War",
+          "price_initial": 9800,
+          "price_final": 7350,
+          "discount": 25,
           "discount_end": null,
           "has_price": true
         }
@@ -2797,36 +2797,6 @@
           "price_initial": 38800,
           "price_final": 17460,
           "discount": 55,
-          "discount_end": null,
-          "has_price": true
-        }
-      ]
-    },
-    {
-      "appid": 4376980,
-      "name_en": "Age of Empires II: DE - The Viking Sagas",
-      "name_cn": "Age of Empires II: DE - The Viking Sagas",
-      "developer": "World's Edge",
-      "publisher": "",
-      "developer_cn": "World's Edge",
-      "publisher_cn": "",
-      "tier": "value",
-      "cn_price": 83.3,
-      "ua_price_uah": 594.0,
-      "ua_price_cny": 89.62,
-      "rating_count": 0,
-      "usd_price": null,
-      "usd_lowest": null,
-      "icon_local": null,
-      "steam_url": "https://store.steampowered.com/app/4376980/",
-      "versions": [
-        {
-          "packageid": 1529207,
-          "name_en": "Age of Empires II: DE",
-          "name_cn": "Age of Empires II: DE",
-          "price_initial": 9800,
-          "price_final": 8330,
-          "discount": 15,
           "discount_end": null,
           "has_price": true
         }
@@ -3697,6 +3667,56 @@
           "price_initial": 42800,
           "price_final": 21400,
           "discount": 50,
+          "discount_end": null,
+          "has_price": true
+        }
+      ]
+    },
+    {
+      "appid": 2362060,
+      "name_en": "CODE VEIN 噬血代码 II",
+      "name_cn": "CODE VEIN 噬血代码 II",
+      "developer": "Bandai Namco Studios Inc.",
+      "publisher": "Bandai Namco Entertainment Inc.",
+      "developer_cn": "Bandai Namco Studios Inc.",
+      "publisher_cn": "Bandai Namco Entertainment Inc.",
+      "tier": "value",
+      "cn_price": 150.08,
+      "ua_price_uah": 1119.0,
+      "ua_price_cny": 168.83,
+      "rating_count": 0,
+      "usd_price": null,
+      "usd_lowest": null,
+      "icon_local": null,
+      "steam_url": "https://store.steampowered.com/app/2362060/",
+      "versions": [
+        {
+          "packageid": 848892,
+          "name_en": "CODE VEIN 噬血代码 II",
+          "name_cn": "CODE VEIN 噬血代码 II",
+          "price_initial": 26800,
+          "price_final": 15008,
+          "discount": 44,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 1399340,
+          "name_en": "CODE VEIN 噬血代码 II 数字终极版",
+          "name_cn": "CODE VEIN 噬血代码 II 数字终极版",
+          "price_initial": 46800,
+          "price_final": 30888,
+          "discount": 34,
+          "discount_end": null,
+          "has_price": true
+        },
+        {
+          "packageid": 1399339,
+          "name_en": "CODE VEIN 噬血代码 II 数字豪华版",
+          "name_cn": "CODE VEIN 噬血代码 II 数字豪华版",
+          "price_initial": 39800,
+          "price_final": 39800,
+          "discount": 0,
           "discount_end": null,
           "has_price": true
         }
