@@ -86,7 +86,11 @@ def download_icon(appid, icons_dir):
         return None
     os.makedirs(icons_dir, exist_ok=True)
     path = os.path.join(icons_dir, f"{appid}.jpg")
+    # v1.0.18：优先 capsule_231x87 小图（约 10KB，100 款仅 ~1MB，App 端加载快 5 倍）；
+    # header.jpg（~50KB）作为回退。80×80 容器下两者渲染差异可忽略（D5 修订）。
     candidates = [
+        f"https://cdn.cloudflare.steamstatic.com/store_item_assets/steam/apps/{appid}/capsule_231x87.jpg",
+        f"https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/{appid}/capsule_231x87.jpg",
         f"https://cdn.cloudflare.steamstatic.com/steam/apps/{appid}/header.jpg",
         f"https://cdn.steamchina.eccdnx.com/steam/apps/{appid}/header.jpg",
         f"https://cdn.cloudflare.steamstatic.com/steam/apps/{appid}/library_600x900.jpg",
@@ -340,6 +344,44 @@ def mode_web(limit, icons_dir):
         cnt[tier] = cnt.get(tier, 0) + 1
     return games, cnt
 
+# ---------------- CheapShark：真·史低与热销度 ----------------
+def fetch_cheapshark_pool(max_games=400):
+    """CheapShark Steam 区在促 deal → {steamAppID: deal}。
+    deal 含 steamRatingCount（评价数=热销度）、gameID（查历史最低用）。
+    注意（2026-09 实测）：该 API 的 page 分页与 steamRatingCount 过滤参数已失效
+    （翻页返回相同数据），但不同 sortBy 返回不同集合——用 6 种排序各取 60 条
+    合并去重可覆盖 ~340 款（含 CS2/Dota2 等评价数十万级大作）。"""
+    sorts = ["Reviews", "Deal%20Rating", "Savings", "Metacritic", "Price", "recent"]
+    out = {}
+    for s in sorts:
+        try:
+            url = (f"https://www.cheapshark.com/api/1.0/deals?storeID=1&onSale=1"
+                   f"&sortBy={s}&pageSize=60")
+            deals = json.loads(http_get(url, timeout=25, headers={"Accept": "application/json"}))
+        except Exception:
+            continue
+        for d in deals or []:
+            appid = d.get("steamAppID")
+            if appid and appid not in out:
+                out[appid] = d
+                if len(out) >= max_games:
+                    return out
+    return out
+
+
+def fetch_usd_lowest(game_id):
+    """CheapShark games?id → cheapestPriceEver.price（USD，真·历史最低价）。"""
+    try:
+        g = json.loads(http_get(
+            f"https://www.cheapshark.com/api/1.0/games?id={game_id}",
+            timeout=20, headers={"Accept": "application/json"}))
+        cpe = g.get("cheapestPriceEver") or {}
+        p = cpe.get("price")
+        return float(p) if p else None
+    except Exception:
+        return None
+
+
 # ---------------- steam 模式：官方 Store 数据 ----------------
 def fetch_specials_pool(limit):
     """特惠列表：Store 搜索接口（specials=1，真实折扣全集，分页）。
@@ -376,10 +418,36 @@ def fetch_specials_pool(limit):
         return []
 
 
-def mode_steam(limit, icons_dir):
-    print("[steam] Store 搜索接口特惠列表 + appdetails 完整响应", file=sys.stderr)
+def mode_steam(limit, icons_dir, prev_json=None):
+    print("[steam] CheapShark 史低映射 + Store 搜索特惠列表 + appdetails 完整响应", file=sys.stderr)
+    cs = fetch_cheapshark_pool(limit * 3)
+    print(f"[steam] CheapShark 在促 {len(cs)} 款", file=sys.stderr)
+
+    # 昨日快照（新史低检测）：appid → 昨日记录的 usd_lowest
+    prev_low = {}
+    if prev_json and os.path.exists(prev_json):
+        try:
+            with open(prev_json, encoding="utf-8") as f:
+                pj = json.load(f)
+            for g in pj.get("games", []):
+                lo = g.get("usd_lowest")
+                if lo:
+                    prev_low[str(g["appid"])] = float(lo)
+            print(f"[steam] 昨日快照 {len(prev_low)} 款（{prev_json}）", file=sys.stderr)
+        except Exception as e:
+            print(f"[steam] 昨日快照读取失败: {e}", file=sys.stderr)
+
+    # 候选池：CN 区特惠列表为主；CheapShark 独有的真史低并入（CN 促销有滞后/差异）
     pool = fetch_specials_pool(limit)
-    print(f"[steam] 特惠池 {len(pool)} 款", file=sys.stderr)
+    seen_ids = {str(a) for a, _ in pool}
+    for appid, deal in cs.items():
+        if len(pool) >= limit + 50:
+            break
+        if appid not in seen_ids:
+            pool.append((int(appid), len(pool)))
+            seen_ids.add(appid)
+    print(f"[steam] 候选池 {len(pool)} 款", file=sys.stderr)
+
     games, cnt = [], {"super_low": 0, "history_low": 0, "super_value": 0, "value": 0}
     for appid, _rank in pool:
         if not appid:
@@ -387,14 +455,44 @@ def mode_steam(limit, icons_dir):
         try:
             full = fetch_app_full(appid)
             detail = full["detail"]
+            if not full["versions"] and not detail.get("price_overview"):
+                continue  # 无任何价格信息（下架/区域锁）直接跳过
             dev = (detail.get("developers") or [""])[0]
             pub = (detail.get("publishers") or [""])[0]
-            # 国服价与折扣：完整响应 price_overview 随 cc=cn&l=schinese 生效
             po = detail.get("price_overview") or {}
             cn_final = (po.get("final", 0) / 100.0) if po.get("final") else None
             disc = po.get("discount_percent") or 0
-            tier = "super_value" if disc >= 50 else "value"
             name_cn = detail.get("name") or str(appid)
+
+            # CheapShark：USD 现价 / 真·历史最低 / 热销度（评价数）
+            deal = cs.get(str(appid))
+            usd_price = usd_lowest = None
+            rating = 0
+            if deal:
+                try:
+                    usd_price = float(deal.get("salePrice") or 0) or None
+                except (TypeError, ValueError):
+                    pass
+                try:
+                    rating = int(deal.get("steamRatingCount") or 0)
+                except (TypeError, ValueError):
+                    pass
+                gid = deal.get("gameID")
+                if gid:
+                    usd_lowest = fetch_usd_lowest(gid)
+
+            # 分级（L2：CheapShark 主判定，折扣力度兜底）：
+            #   super_low   新史低：历史最低价今天被刷新（usd_lowest < 昨日 usd_lowest）
+            #   history_low 史低中：当前成交价 == 全历史最低
+            #   其余按折扣力度分级（super_value/value）
+            prev = prev_low.get(str(appid))
+            if usd_lowest and prev and usd_lowest < prev - 0.005:
+                tier = "super_low"
+            elif usd_price and usd_lowest and usd_price <= usd_lowest + 0.005:
+                tier = "history_low"
+            else:
+                tier = "super_value" if disc >= 50 else "value"
+
             # 乌克兰价（独立区服快照；filters=price_overview 仍可用）
             ua = None
             try:
@@ -412,6 +510,8 @@ def mode_steam(limit, icons_dir):
                 "developer": dev, "publisher": pub, "developer_cn": cn_company(dev),
                 "publisher_cn": cn_company(pub), "tier": tier,
                 "cn_price": cn_final, "ua_price_uah": ua, "ua_price_cny": ua_cny,
+                "rating_count": rating,
+                "usd_price": usd_price, "usd_lowest": usd_lowest,
                 "icon_local": download_icon(appid, icons_dir),
                 "steam_url": STEAM_STORE.format(appid),
                 "versions": full["versions"],
@@ -419,6 +519,9 @@ def mode_steam(limit, icons_dir):
             cnt[tier] = cnt.get(tier, 0) + 1
         except Exception as e:
             print(f"[steam] {appid} 失败: {e}", file=sys.stderr)
+
+    # 热销排序：评价数降序（无评价数的排最后，组内按价格升序）
+    games.sort(key=lambda g: (-(g.get("rating_count") or 0), g.get("cn_price") or 9e9))
     return games, cnt
 
 # ---------------- demo 模式 ----------------
@@ -456,6 +559,8 @@ if __name__ == "__main__":
     ap.add_argument("--md-path", default="steam_lowest.md")
     ap.add_argument("--icons-dir", default="./icons")
     ap.add_argument("--no-icons", action="store_true")
+    ap.add_argument("--prev-json", default=None,
+                    help="昨日 steam_lowest.json 路径（对比检测今日新史低）")
     ap.add_argument("--rate", type=float, default=None, help="覆盖汇率(1 UAH=CNY)")
     args = ap.parse_args()
 
@@ -466,7 +571,7 @@ if __name__ == "__main__":
     if args.mode == "web":
         games, cnt = mode_web(args.limit, icons_dir)
     elif args.mode == "steam":
-        games, cnt = mode_steam(args.limit, icons_dir)
+        games, cnt = mode_steam(args.limit, icons_dir, prev_json=args.prev_json)
     else:
         games, cnt = mode_demo(icons_dir)
 
