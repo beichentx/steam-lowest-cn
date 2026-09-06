@@ -70,7 +70,10 @@ jobs:
               sys.exit(1)
           withv = sum(1 for g in games if g.get('versions'))
           ncn = sum(1 for g in games if g.get('cn_price'))
-          print(f"质量门禁通过: {len(games)} 款 / 国服价 {ncn} / 版本覆盖 {withv}")
+          nlow = sum(1 for g in games if g.get('usd_lowest'))
+          print(f"质量门禁通过: {len(games)} 款 / 国服价 {ncn} / 版本覆盖 {withv} / 史低映射 {nlow}")
+          if nlow == 0:
+              print("::warning::CheapShark 史低映射为空（数据中心 IP 可能被 Cloudflare 挑战），本次仅有折扣分级、无真史低/热销数据。请检查 cheapshark.com 可达性")
           PY
 
       - name: 清理未被当前数据引用的旧图标
